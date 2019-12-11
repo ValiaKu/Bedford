@@ -1,0 +1,340 @@
+/****************************************/
+/***************LIFESTYLE****************/
+/****************************************/
+
+/******************TOP*******************/
+
+.lifestyle .top {
+	height: 1080px;
+	background:url(../images/lifestyle/lifestyle.jpg) no-repeat center;
+}
+
+.lifestyle .message p._1 {
+	margin:-220px 0px 0px 0px;
+	background:url(../images/lifestyle/cutlery.png) no-repeat center;
+	height:220px;
+}
+
+.lifestyle .message p._2 {
+	margin:70px 0px 0px 0px;
+	letter-spacing:10px;
+}
+
+.amenity h3,
+.activity h3 {
+	font-family: "bureaueaglebookregular";
+	font-size: 15px;
+	text-transform: uppercase;
+	padding:0px 0px 25px;
+	letter-spacing: 1px;
+}
+
+/**************OVERVIEW**************/
+
+.lifestyle .content {
+	padding:0px 0px 180px;
+}
+
+/*************AMENITIES*************/
+
+#amenities {
+	padding:0px 25px;
+
+}
+
+#amenities .desc._1 {
+	max-width: 1270px;
+
+}
+
+.amenities-selector {
+	padding:0px 0px 30px;
+	max-width:800px;
+	margin:0px auto;
+}
+
+
+.amenities-selector .category {
+	display:inline-block;
+	*display:inline; zoom:1;
+	width:230px;
+	margin:0px 3px 12px;
+}
+
+
+.amenities-selector a {
+	display:block;
+	border-radius: 17px;
+	text-align:left;
+	padding:10px 15px;
+	background:#d2cdca;
+	text-transform:uppercase;
+	color:#3c3c3b;
+	font-size:11px;
+	letter-spacing: 1px;
+}
+
+
+.amenities-selector a.default {
+	background:#d2cdca;
+	color:#3c3c3b;
+}
+
+.amenities-selector a:hover, 
+.amenities-selector a.active {
+	background:#6f8cb0;
+	color:#fff;
+}
+
+.amenities-selector a span {
+	display:block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border:1px solid #3c3c3b;
+	float:right;
+	margin:2px 0px 0px;
+}
+
+.amenities-selector a:hover span, 
+.amenities-selector a.active span {
+	background:#fff;
+	border:1px solid #fff;
+}
+
+.amenities {
+	max-width: 1260px;
+	margin: 0 auto;
+	height: 1195px !important;
+	overflow: hidden;
+}
+
+.amenity {
+	display:inline-block;
+	background:#e9e5e1;
+	margin:20px 1%;
+	max-width:300px;
+	width:23%;
+	color:#3c3c3b;
+	vertical-align:top;
+	display: none;
+	float:left;
+	height: 565px !important;
+	overflow: hidden;
+	position: relative;
+}
+
+
+.amenity.initialSelected,
+.amenity.active,
+.amenity.visible100.selected{
+	display: block;
+}
+
+.amenity img {
+	vertical-align:top;
+}
+
+.amenity h3 {
+	padding:85px 0px 20px;
+	margin:35px 0px 0px;
+	text-transform:uppercase;
+}
+
+.amenity h4 {
+	font-family:"Avenir Next Cyr W00 Demi", Arial, Helvetica, sans-serif;
+}
+.amenity .copy {
+	height: auto;
+}
+.amenity .copy h4 + p {
+	margin-top: 0;
+	height: 36 !important;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.amenity.finedining h3 { background:url(../images/lifestyle/finedining.png) no-repeat center top;}
+.amenity.afterhours h3 { background:url(../images/lifestyle/afterhours.png) no-repeat center top;}
+.amenity.clientlunch h3 { background:url(../images/lifestyle/clientlunch.png) no-repeat center top;}
+.amenity.designerbrands h3 { background:url(../images/lifestyle/designerbrands.png) no-repeat center top;}
+.amenity.quickbite h3 { background:url(../images/lifestyle/quickbite.png) no-repeat center top;}
+.amenity.boutique h3 { background:url(../images/lifestyle/boutique.png) no-repeat center top;}
+
+
+.amenity .copy p + p{
+	font-size:14px;
+	padding:0px 35px 0px;
+	margin:15px 0px 40px;
+	height: auto !important;
+}
+
+.amenity .copy p span {
+	display:block;
+	padding:10px 0px 0px;
+}
+
+.amenity .stars {
+	border-top:1px solid #c6c3c0;
+	text-align:center;
+	padding:12px 0px;
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+	
+.amenity .star {
+	width:18px; height:18px;
+	display:inline-block;
+	background:url(../images/lifestyle/star.png) no-repeat right top;
+}
+
+.amenity .star.active {
+	background:url(../images/lifestyle/star.png) no-repeat left top;
+}
+
+/***************GALLERY**************/
+
+.gallery {
+	position:relative;
+	overflow:hidden;
+}
+
+.caroufredsel_wrapper .imgs {	}
+
+.gallery .imgs .slide {
+	text-align:center;
+	display:block;
+	float: left;
+	position:relative;
+
+}
+.gallery .imgs .slide img {
+}
+.gallery .imgs p {
+	position:absolute;
+	bottom:60px;
+	width:100%;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	
+}
+
+.gallery .pager {
+	position:absolute;
+	bottom:20px;
+	width:100%;
+	text-align:center;
+	vertical-align:top;
+}
+
+.gallery .pager a {
+	text-indent: -5999px;
+	display:inline-block;
+	width:10px; height:10px;
+	background:url(../images/dot.png) no-repeat left top;
+	margin:0px 3px;
+}
+
+.gallery .pager a:hover, .gallery .pager a.selected {
+	background:url(../images/dot.png) no-repeat right top;
+}
+
+.gallery .prev {
+	position:absolute;
+	left:50px; top:50%; 
+	margin:-15px 0px 0px;
+	width:16px; height:31px;
+	background:url(../images/arrow-prev-gallery.png);
+}
+
+.gallery .next {
+	position:absolute;
+	right:50px; top:50%; 
+	margin:-15px 0px 0px;
+	width:16px; height:31px;
+	background:url(../images/arrow-next-gallery.png);
+}
+
+
+.content article.summary {
+	color:#4d4d4d;
+	width:900px;
+	margin:0px auto;
+	padding:65px 0px;
+}
+
+.content .summary .col {
+	width:45%;
+	margin:0px 2%;
+}
+
+.content .summary h3 {
+	padding:0px 0px 25px;
+	font-size:21px;
+}
+
+.content .summary p {
+	font-size:14px;
+	line-height:20px;
+	padding:0px 0px 0px 25px;
+	background:url(../images/bullet.png) no-repeat left 5px;
+	text-align:left;
+	margin:20px 0px;
+}
+
+
+/*****************LEISURE*****************/
+#leisure .desc._1 {
+	max-width: 1270px;
+}
+
+.activities {
+	margin:0px auto;
+	width:80%;
+	text-align:center;
+	padding:0px 0px 0px;
+	position:relative;
+}
+
+.activities .next,
+.activities .prev
+{
+	position:absolute;
+	top:50%;
+	margin:-30px 0px 0px;
+	display:block;
+	z-index:10;
+	width:16px; height:31px;
+}
+
+.activities .prev{left:0px; background:url(../images/arrow-left-traveloption.png)}
+.activities .next{right:0px; background:url(../images/arrow-right-traveloption.png)}
+
+
+.activities .activity {
+	margin:5px 1% 5px;
+	padding:50px 0px 50px;
+	width:22.5%;
+	border-top:2px solid #4d4d4d;
+	vertical-align:top;
+	color:#3c3c3b;
+	min-height:350px;
+}
+
+.activities .activity p {
+	font-size:14px;
+}
+
+.activities .activity h3 {
+	min-height:44px;
+	line-height:22px;
+	padding:10px 0px 25px;
+}
+
+.activitybtm {
+	margin:5px 1% 5px;
+	width:22.5%;
+	border-top:2px solid #4d4d4d;
+}

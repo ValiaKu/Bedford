@@ -1,0 +1,607 @@
+/****************************************/
+/****************LOCATION****************/
+/****************************************/
+
+/******************TOP*******************/
+
+.location .top {
+	height: 1080px;
+	background:url(../images/location/main.jpg) no-repeat center;
+}
+
+.location .message p._1 {
+	margin:-220px 0px 0px 0px;
+	background:url(../images/location/refresh.png) no-repeat center;
+	height:220px;
+}
+
+.location .message p._2 {
+	margin:70px 0px 0px 0px;
+}
+
+
+/****************CONTENT*****************/
+
+
+.location .content {
+	padding:0px 0px 180px;
+}
+
+.location .content .desc {
+	padding:70px 0px 65px;
+}
+
+
+/**********************OVERVIEW**********************/
+
+
+
+.map-overview {
+	overflow:hidden;
+}
+
+.map-overview .inner {
+	position:relative;
+}
+
+.map-overview .inner > img {
+	width: 100%;
+}
+
+.map-overview .labels {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px; left:0px;
+}
+
+.map-overview .label {
+	position:absolute;
+}
+
+.map-overview .label>div {
+	position:absolute;
+	width:200px;
+	text-align:center;
+	margin:0px 0px 0px -100px;
+	bottom:0px;
+}
+
+.map-overview .label>div p {
+	padding:8px 16px;
+	background:#dcd6d1;
+	display:inline-block;
+	*display:inline; zoom:1;
+	color:#000;
+	font-size:13px;
+	font-family: 'bureaueaglebookregular';
+}
+
+
+.tooltip {
+	background:#575756;
+	padding:10px 25px;
+	font-size:12px;
+	color:#dcd6d1;
+	margin:47px 0px 0px;
+	text-transform:uppercase;
+	width: 300px;
+}
+
+.tooltip + .tooltip  {
+	margin-top: 20px;
+}
+
+
+/*******************REGENERATION*********************/
+
+
+.map-regeneration {
+	overflow:hidden;
+	margin:-33px 0px 33px;
+}
+
+.map-regeneration .inner {
+	background:url(../images/map-regeneration.gif) no-repeat center top / 100% 100%;
+	position:relative;
+	width:100%;
+	height:1180px;
+	overflow:hidden;
+	min-width: 1024px;
+	max-width: 1600px;
+	margin: 0 auto;
+}
+
+.map-regeneration .developments {
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0px; left:0px;
+}
+
+.map-regeneration .development {
+	position:absolute;
+}
+
+.map-regeneration .development>div {
+	position: absolute;
+	width: 200px;
+	text-align: center;
+	margin: 0px 0px 0px -100px;
+	bottom: 0px;
+	left: 0px;
+	
+}
+
+.map-regeneration .development>div p {
+	padding:12px 25px;
+	background:#8ca2bf;
+	display:inline-block;
+	*display:inline; zoom:1;
+	color:#fff;
+	font-size:12px;
+}
+
+.map-regeneration .development>div p span {
+	text-decoration:underline;
+}
+
+.map-regeneration .development>div p span:first-child {
+	display: block;
+	text-decoration:none;
+	font-family: "Avenir Next Cyr W00 Bold";
+}
+
+.map-regeneration .development>div:after {
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(111, 140, 176, 0);
+	border-top-color: #8ca2bf;
+	border-width: 12px;
+	margin-left: -12px;
+}
+
+
+#regeneration .legend {
+	text-align:left;
+	padding:0px 100px;
+	margin:-100px 0px 0px 0px;
+	color:#000;
+	position:relative;
+	z-index:5;
+}
+
+#regeneration .legend h3 {
+	padding:0px 0px 10px;
+}
+
+#regeneration .legend p {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	display:inline-block;
+	margin:0px 10px 0px 0px;
+	vertical-align:top;
+}
+
+#regeneration .legend .commercial p {background:#96a6b9}
+#regeneration .legend .mixed p {background:#e0bba0}
+#regeneration .legend .retail p {background:#b7abba}
+
+.legend .lines {
+	position: absolute; 
+	top: 28px; 
+	left: 350px; 
+}
+
+.legend .lines p {
+	border-radius: 0;
+	width: 60px;
+	height: 7px;
+	display:inline-block;
+	margin:5px 10px 0 0;
+	vertical-align:top;
+}
+
+.legend .central p {background:#e30513}
+.legend .northern p {background:#1c1c1b}
+.legend .elizabeth p {background:#61358b}
+
+.legend_note p {
+	width: auto;
+	margin-top: 40px;
+}
+
+#regeneration .legend .category {
+	padding:2px 0px;
+}
+
+#regeneration .legend .category span {
+	line-height:20px;
+	display:inline-block;
+	vertical-align:top;
+}
+
+.mapmenu {
+	padding:0px 0px 20px;
+	display:none;
+}
+
+
+.mapmenu a {
+	display:block;
+	border-radius: 20px;
+	text-align:left;
+	padding:12px 15px;
+	background:#d2cdca;
+	margin:8px 0px 0px;
+	text-transform:uppercase;
+	font-size:12px;
+}
+
+.mapmenu a:hover, .mapmenu a.active {
+	background:#6f8cb0;
+}
+
+.mapmenu a span {
+	display:block;
+	border-radius: 50%;
+	width: 10px;
+	height: 10px;
+	border:1px solid #FFF;
+	float:right;
+	margin:3px 0px 0px;
+}
+
+.mapmenu a:hover span, .mapmenu a.active span {
+	background:#fff;
+}
+
+
+/*****************TRANSPORT*****************/
+
+
+.transportation h3 {
+	font-family: "bureaueaglebookregular";
+	font-size: 15px;
+	text-transform: uppercase;
+	padding:0px 0px 25px;
+	letter-spacing: 1px;
+}
+#transport .desc._1 {
+	max-width: 520px;
+}
+
+#transport .desc._1 + img {
+	width: 100%;
+}
+.transportations {
+	margin:0px auto;
+	width:80%;
+	text-align:center;
+	padding:0px 0px 0px;
+	position:relative;
+}
+
+.transportations .next,
+.transportations .prev
+{
+	position:absolute;
+	top:50%;
+	margin:-30px 0px 0px;
+	display:block;
+	z-index:10;
+	width:16px; height:31px;
+}
+
+.transportations .prev{left:0px; background:url(../images/arrow-left-traveloption.png)}
+.transportations .next{right:0px; background:url(../images/arrow-right-traveloption.png)}
+
+
+
+/*.occupiers .occupier.btm {
+	border-bottom:2px solid #4d4d4d;
+}*/
+
+.occupierbtm {
+	margin:5px 3.1% 5px;
+	width:18%;
+	border-top:2px solid #4d4d4d;
+}
+
+
+.transportmap {
+	display:table;
+	margin:130px 0px 50px;
+}
+.transportmap .map .block{
+	width: 100%;
+}
+.transportmap>div {
+	display:table-cell;
+	width:50%;
+	*float:left;
+	vertical-align:middle;
+}
+
+.transportmap .desc {
+	background:#6f8cb0;
+	color:#ffffff;
+	padding:0px 0px !important;
+}
+
+.transportmap .desc article {
+	padding:0px 20%;
+}
+
+.transportmap .desc h2 {
+	color:#ffffff;
+	font-size:21px;
+	padding:100px 0px 30px;
+	background:url(../images/transport-icon.png) no-repeat center top;
+}
+
+.transportmap .desc p {
+	color:#ffffff;
+}
+
+.content .transportmap + .desc {
+	max-width: 1270px;
+}
+
+.location .routes {
+	margin:0px auto 50px;
+	max-width:960px;
+	padding:0px 0px 0px;
+	position:relative;
+}
+
+.location .routes > img:first-child {
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 96%;
+}
+
+.location .routelist {
+	padding:0px 20px;
+}
+
+.location .routelist h3 {
+	color:#3c3c3b;
+	text-transform:uppercase;
+	padding:70px 0px 30px;
+	background:url(../images/crossrail.png) no-repeat center top;
+	border-bottom:1px solid #3c3c3b;
+}
+
+.location .routelist p {
+	text-align:left;
+	clear:both;
+	padding:15px 0px;
+	border-bottom:1px solid #3c3c3b;
+}
+
+.location .routelist p span,
+.location .routelist p img  {
+	display:inline-block;
+	vertical-align:middle;
+	text-transform:uppercase;
+	color:#3c3c3b;
+}
+
+.location .routelist p .station {
+	padding:0px 15px 0px 0px;
+}
+
+.location .routelist p .time {
+	float:right;
+}
+
+.location .routes .legend {
+	position:absolute;
+	bottom:0px; left:0px;
+	padding:0px 20px;
+}
+
+.location .routes .legend span{
+	text-align:left;
+	padding:5px 30px;
+	color:#4d4d4d;
+}
+
+.location .routes .legend span._1{
+	background:url(../images/location/underground-icon.png) no-repeat left center;
+}
+.location .routes .legend span._2{
+	background:url(../images/location/dlr-icon.png) no-repeat left center;
+}
+.location .routes .legend span._3{
+	background:url(../images/location/overground-icon.png) no-repeat left center;
+}
+.location .routes .legend span._4{
+	background:url(../images/location/rail-icon.png) no-repeat left center;
+}
+
+
+.traveloptions {
+	margin:0px auto;
+	width:80%;
+	text-align:center;
+	padding:0px 0px 0px;
+	position:relative;
+}
+
+.traveloptions .next,
+.traveloptions .prev
+{
+	position:absolute;
+	top:50%;
+	margin:-30px 0px 0px;
+	display:block;
+	z-index:10;
+	width:16px; height:31px;
+}
+
+.traveloptions .prev{left:0px; background:url(../images/arrow-left-traveloption.png)}
+.traveloptions .next{right:0px; background:url(../images/arrow-right-traveloption.png)}
+/*
+
+.traveloptions .traveloption {
+	margin:5px 1% 5px;
+	padding:40px 0px 45px;
+	width:22.5%;
+	border-top:2px solid #4d4d4d;
+	vertical-align:top;
+	color:#3c3c3b;
+	min-height:350px;
+}
+
+.traveloptions .traveloption p {
+	font-size:14px;
+	max-width:230px;
+	margin:0px auto;
+}
+
+.traveloptions .traveloption h3 {
+	font-size:18px;
+	text-transform:uppercase;
+	min-height:44px;
+	line-height:22px;
+	padding:10px 0px 25px;
+}
+*/
+/*.traveloptions .traveloption.btm {
+	border-bottom:2px solid #4d4d4d;
+}*/
+/*
+.traveloptionbtm {
+	margin:5px 1% 5px;
+	width:22.5%;
+	border-top:2px solid #4d4d4d;
+}*/
+
+/************************OCCUPIERS************************/
+
+#occupiers .desc._1 {
+	max-width: 1270px;
+}
+
+.occupiers {
+	margin:0px auto;
+	width:80%;
+	text-align:center;
+	padding:0px 0px 0px;
+	position:relative;
+	 padding: 0 0 20px;
+   
+
+}
+#occupiers .clr {
+	margin-bottom: 50px;
+}
+
+.occupiers .next,
+.occupiers .prev
+{
+	position:absolute;
+	top:50%;
+	margin:-30px 0px 0px;
+	display:block;
+	z-index:10;
+	width:16px; height:31px;
+}
+
+.occupiers .prev{left:0px; background:url(../images/arrow-left-traveloption.png)}
+.occupiers .next{right:0px; background:url(../images/arrow-right-traveloption.png)}
+
+
+.occupiers .occupier,
+.transportations .transportation {
+	margin:5px 3.1% 5px;
+	padding:60px 0px 55px;
+	width:18%;
+	border-top:2px solid #4d4d4d;
+	vertical-align:top;
+	color:#3c3c3b;
+	min-height:300px;
+}
+
+.occupiers .occupier p,
+.transportations .transportation p {
+	font-size:14px;
+	max-width:230px;
+	margin:0px auto;
+}
+
+.occupiers .occupier h3,
+.transportations .transportation h3 {
+	font-size:14px;
+	min-height:44px;
+	line-height:22px;
+	padding:10px 0px 15px;
+}
+
+/*.occupiers .occupier.btm {
+	border-bottom:2px solid #4d4d4d;
+}*/
+
+.occupierbtm,
+.transportationbtm {
+	margin:5px 3.1% 5px;
+	width:18%;
+	border-top:2px solid #4d4d4d;
+}
+
+.map-regeneration .development {
+	z-index: 2000;
+
+	background-color: transparent;
+}
+.map-regeneration .development > div {
+	z-index: 2000;
+}
+.map-regeneration .development > div * {
+	visibility: hidden;
+}
+.map-regeneration  .development > div.popupMapItemVisible *{
+	visibility: visible;
+}
+.map-regeneration .development > div::after {
+	display: none;
+}
+.map-regeneration .development > div.popupMapItemVisible::after {
+	display: block;
+}
+/*******************AREA REGENARATION - MOBILE MAP************************/
+
+@media only screen and (max-width: 1500px) {
+	.map-regeneration .inner {
+		height: 1110px;
+	}
+}
+@media only screen and (max-width: 1400px) {
+	.map-regeneration .inner {
+		height: 1034px;
+	}
+}
+@media only screen and (max-width: 1300px) {
+	.map-regeneration .inner {
+		height: 962px;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.map-regeneration .inner {
+		height: 888px;
+	}
+}
+@media only screen and (max-width: 1100px) {
+	.map-regeneration .inner {
+		height: 814px;
+	}
+}	

@@ -1,0 +1,112 @@
+/****************************************/
+/****************BUILDING****************/
+/****************************************/
+
+/******************TOP*******************/
+
+.contact .top {
+	height: 1080px;
+	background:url(../images/contact/main.jpg) no-repeat center;
+}
+
+.contact .message p._1 {
+	margin:-220px 0px 0px 0px;
+	background:url(../images/contact/phone.png) no-repeat center;
+	height:220px;
+}
+
+.contact .message p._2 {
+	margin:70px 0px 0px 0px;
+}
+
+.contact .subsection {
+	background-color: #FFF !important;
+}
+
+/**************CONTENT**************/
+
+
+
+
+.contact h2{
+	font-family: "bureaueaglebookregular";
+	font-size: 17px;
+	letter-spacing: 2px;
+	text-transform:uppercase;
+	max-width:550px;
+	margin:0px auto;
+	padding:80px 20px 60px;
+	color:#3c3c3b;
+}
+
+
+.contact .name {
+	font-family:"Avenir Next Cyr W00 Demi";
+}
+
+.contact .cols {
+	padding:0px 25px;
+}
+
+.contact .col {
+	width:45%;
+	margin:0px 2%;
+	vertical-align:top;
+	max-width:400px;
+	color:#4d4d4d;
+}
+
+
+.contact .col p {
+	padding:0px 0px 0px 200px;
+	text-align:left;
+}
+
+.contact .col.cbre p {
+	background:url(../images/contact/cbre.png) no-repeat top left;
+}
+
+.contact .col.savills p {
+	background:url(../images/contact/savills.png) no-repeat top left;
+}
+
+
+
+.contact .downloads a  {
+	display:inline-block;
+	width:185px;
+    border-radius: 19px;
+	padding:10px 50px 10px 25px;
+	margin:5px 25px;
+	text-align:left;
+	color:#ffffff;
+	background:#6f8cb0 url(../images/download.png) no-repeat 90% center;
+	letter-spacing: 1px;
+}
+.contact .downloads a:hover,
+.contact .downloads a:focus {
+	background-color: #e3deda;
+	color: #6f8cb0;
+	background-image:url(../images/download_active.png);
+}
+
+.disclaimer {
+	margin:80px auto 0px;
+	padding:0px 25px 80px;
+	text-align:center;
+	max-width:750px;
+	font-size:12px;
+	color:#4d4d4d;
+}
+
+.contact .cols a {
+  color: #4d4d4d;
+}
+
+.contact .cols a:hover {
+  text-decoration: underline;
+}
+
+.contact .submenu.alternateSub {
+	display: none;
+}

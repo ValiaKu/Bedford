@@ -1,0 +1,97 @@
+/****************************************/
+/****************BUILDING****************/
+/****************************************/
+
+/******************TOP*******************/
+
+.developer .top {
+	height: 1080px;
+	background:url(../images/developer/main.jpg) no-repeat center;
+}
+
+.developer .message p._1 {
+	margin:-220px 0px 0px 0px;
+	background:url(../images/developer/team.png) no-repeat center;
+	height:220px;
+}
+
+.developer .message p._2 {
+	margin:70px 0px 0px 0px;
+}
+
+
+/**************CONTENT**************/
+
+
+.developer .content  {
+	padding:0px 0px 100px;
+}
+
+.developer .content h3 {
+	font-size:21px;
+	color:#4d4d4d;
+	max-width:550px;
+	margin:0px auto;
+	padding:65px 30px 65px;
+}
+
+.developer .cols {
+	padding:0px 25px;
+}
+
+.developer .col {
+	width:40%;
+	margin:0px auto;
+	vertical-align:top;
+	max-width:400px;
+	color:#4d4d4d;
+}
+
+.developer .cols a {
+font-family:"Avenir Next Cyr W00 Demi";
+	color: #4d4d4d;
+}
+
+.developer .col.ashby {
+	margin:0px 7% 0px 0px;
+}
+
+.developer .col.exemplar {
+	margin:0px 0px 0px 7%;
+}
+
+
+.developer .col.ashby h2 {
+	line-height:500px;
+	background:url(../images/developer/title-ashby.png) no-repeat top;
+	width:210px;
+	height:60px;
+	overflow:hidden;
+}
+
+.developer .col.exemplar h2 {
+	line-height:500px;
+	background:url(../images/developer/title-exemplar.png) no-repeat top;
+	width:180px;
+	height:60px;
+	overflow:hidden;
+}
+
+
+
+.developer .col p {
+	font-size:14px;
+	text-align:left;
+	margin:20px 0px;
+}
+
+.developer .col span {
+	font-size:12px;
+	text-align:left;
+	display:block;
+	padding:15px 0px 0px;
+}
+
+.developer .submenu.alternateSub {
+	display: none;
+}

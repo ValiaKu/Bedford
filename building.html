@@ -1,0 +1,971 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Avenue - Building</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/building.css" type="text/css">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css">
+
+    <!--[if lte IE 8]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+    <script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.onscreen.js"></script>
+
+    <script src="js/jquery.bpopup.min.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.sticky.js"></script>
+    <style>#popupForm { display:none; } #popupForm2 { display:none; }</style>
+    <script type="text/javascript">
+        ;(function($) {
+             $(function() {
+                $('#my-button').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#popupForm').bPopup();
+                });
+
+                $('.form-button-1').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#popupForm2').bPopup();
+                });         
+            });
+         })(jQuery);
+    </script>
+
+    <script type="text/javascript">
+        $(window).load(function(){
+            $("#submenu").sticky({ topSpacing: 50 });
+            goToSubsection(window.location.href);
+
+            $(".swapButtons a").click(function (evt) {
+                $(this).closest(".floorplan").find('.swapButtons a').removeClass('active');
+                $(this).closest(".floorplan").find('.plans img').removeClass('active');
+
+                var curr = $(this).attr('class');
+
+                var par = $(this).parent();
+                $(this).addClass('active');
+                $(".plans img."+curr).addClass('active');
+            });
+        });
+    </script>
+
+    <script src="js/scripts.js"></script>
+    <style>
+        .plans img{
+            width: 100%;
+            display: none;
+        }
+
+        .plans img.active{
+            width: 100%;
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet" href="css/nav.css" type="text/css" />
+    <script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+</head>
+
+<body class="building">
+
+    <div class="header-wrapper">
+        <header class="header building animated">
+           <div class="nav-wrapper">
+                <figure class="header-image"></figure>
+                <nav class="nav" role="navigation">
+                    <h2 class="nav-logo"><a href="/">The Avenue</a></h2>
+                    <div class="nav-trigger" role="button"><span></span></div>
+        
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="location.html">Location</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#area">Area</a></li>
+                                <li><a href="#regeneration">Regeneration</a></li>
+                                <li><a href="#transport">Transport</a></li>
+                                <li><a href="#occupiers">Local Occupiers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="lifestyle.html">Lifestyle</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#amenities">Local Amenities</a></li>
+                                <li><a href="#leisure">Leisure</a></li>
+                            </ul>
+                        </li>
+                        <li class="current">
+                            <a href="building.html">The Building</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Building Overview</a></li>
+                                <li><a href="#specification">Summary Specification</a></li>
+                                <li><a href="#accommodation">Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="retail.html">Retail</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#developments">Local Developments</a></li>
+                                <li><a href="#retailers">Local Retailers</a></li>
+                                <li><a href="#accommodation">Accommodation</a></li>
+                                <li><a href="#specification">Specification</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="developer.html">Developer</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact & Downloads</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="cta shareButton" role="button" id="my-button">+ SHARE</span>
+            </div>
+
+            <figure class="headline-icon"></figure>
+            <h1>Iconic Style</h1>
+        
+            <span class="scroll-down-arrow" role="button"></span>
+        
+        </header>
+    </div>
+
+    <div class="header-placeholder"></div>
+
+    <div id="wrapper">
+        
+        <main>
+            
+            <section class="content">
+            	
+                <nav class="submenu" id="submenu">
+                    <a href="#overview" class="active">Building Overview</a>
+                    <a href="#specification">Summary Specification</a>
+                    <a href="#accommodation">Accommodation</a>
+                </nav>
+                
+                <div class="subsection active" name="overview" id="overview">
+                
+                    <article class="desc _1">
+                    
+                        <h3>The Avenue offers 71,300 sq ft of high specification office space.</h3>
+                        
+                        <p>
+                            Designed by Sterling Prize nominated architects, Bennetts Associates, The Avenue is set to become the landmark building for the area. Contemporary artist Lilah Fowler has been commissioned to design a piece of public artwork to accentuate The Avenue’s façade. 
+                        </p>
+                        
+                    </article>
+                    
+                    <div class="gallery">
+                    
+                        <div class="imgs">
+                            <div class="slide">
+                                <img src="images/slide1.jpg" alt="slide"> 
+                            </div>
+                            <div class="slide">
+                                <img src="images/slide2.jpg" alt="slide"> 
+                            </div>
+                            <div class="slide">
+                                <img src="images/slide3.jpg" alt="slide"> 
+                            </div>
+                            <div class="slide">
+                                <img src="images/slide4.jpg" alt="slide"> 
+                            </div>
+                        </div>
+                    
+                        <div class="pager"></div>
+                    	
+                        <a class="prev" href="#"> </a>
+                        <a class="next" href="#"> </a>
+                        
+                    </div>
+                    
+                    
+                    
+                    <article class="desc _1">
+                            <p>Each floor plate has been designed to maximise flexibility of use to accommodate all working environments, be it an open space,  informal creative set-up or a more structured offering. 
+                            <br /><br />
+                            Light is abundant throughout, and stylish features incorporated, from the contemporary bathrooms through to the roof gardens on the upper levels, which provide stunning views over the capital, overlooking the iconic British Museum 
+                            and beyond.
+                        </p>
+                    </article>
+                    
+                    <img class="lazy" data-src="images/building-overview-placeholder.jpg">
+                    </div>
+                    
+                    <div class="subsection" id="specification">
+                     
+                     	<article class="summary _1">
+                            <h3>Summary Specification</h3>
+                        
+                        	<div class="col">
+                                <p>Roof Terraces on levels 4 -7</p>
+                                <p>Mechanical Systems to cater for 1:8 base occupancy (person/sqm)</p>
+                                <p>2.7m floor to ceiling height</p>
+                                <p>1.5m planning grid</p>
+                                <p>4-pipe fan coil air conditioning</p>
+                                <p>3 x 17 person passenger lifts</p>
+                                <p>25W/sqm small power base load</p>
+                            </div>
+                            
+                            <div class="col">
+                                <p>Life safety standby generator</p>
+                                <p>Space provided for tenant’s standby generator</p>
+                                <p>BREEAM ‘Excellent’ rating</p>
+                                <p>EPC ‘B’ rating</p>
+                                <p>9 showers</p>
+                                <p>87 secure bicycle spaces</p>
+                                <p>94 lockers</p>
+                            </div>
+                            
+                            <div class="dwn download">
+                            	<a href='#' class="cta btn">Download Full Specification</a>
+                            </div>
+                        </article>
+                     </div>
+                    
+                    <div class="subsection" id="accommodation">
+                    	
+                        <article class="desc _1">
+                            <h2>Schedule of areas</h2>
+                        </article>
+
+                        <div class="areas">
+                            
+                            <div class="buildingplan">
+                                <img src="images/building.png"> 
+                                <div>TOTTENHAM COURT ROAD<p>BEDFORD AVENUE</p></div>
+                            </div>
+                            
+                            
+                            <div class="specs">
+                                
+                               <div class="row header">
+                                   <p class="_1">Floor</p>
+                                   <p class="_2">Use</p>
+                                   <p class="_3">SQ FT</p>
+                                   <p class="_4">SQ M</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Seven</p>
+                                   <p class="_2">Office<br>Terraces</p>
+                                   <p class="_3">4,499<br>134</p>
+                                   <p class="_4">418<br>12</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Sixth</p>
+                                   <p class="_2">Office<br>Terraces</p>
+                                   <p class="_3">8,880<br>382</p>
+                                   <p class="_4">825<br>35</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Fifth</p>
+                                   <p class="_2">Office<br>Terraces</p>
+                                   <p class="_3">10,430<br>383</p>
+                                   <p class="_4">969<br>36</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Fourth</p>
+                                   <p class="_2">Office<br>Terraces</p>
+                                   <p class="_3">11,227<br>384</p>
+                                   <p class="_4">1,043<br>36</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Third</p>
+                                   <p class="_2">Office</p>
+                                   <p class="_3">11,948</p>
+                                   <p class="_4">1,110</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Second</p>
+                                   <p class="_2">Office</p>
+                                   <p class="_3">11,948</p>
+                                   <p class="_4">1,110</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">First</p>
+                                   <p class="_2">Office</p>
+                                   <p class="_3">11,399</p>
+                                   <p class="_4">1,059</p>
+                               </div>
+                               
+                               <div class="row">
+                                   <p class="_1">Ground</p>
+                                   <p class="_2">Reception</p>
+                                   <p class="_3">969</p>
+                                   <p class="_4">90</p>
+                               </div>
+                                      
+                               <div class="row">
+                                   <p class="_1">Lower Ground</p>
+                                   <p class="_2">Cycle Store &amp;<br>Changing Facilites</p>
+                                   <p class="_3"> - </p>
+                                   <p class="_4"> - </p>
+                               </div>
+                                      
+                               <div class="row nobtm footer">
+                                   <p class="_1">Total availability</p>
+                                   <p class="_2"></p>
+                                   <p class="_3">85,271</p>
+                                   <p class="_4">7,922</p>
+                               </div>
+                               
+                               <div class="row nobtm">
+                                
+                                   <div class="legend">
+                                    <p class="office">Offices</p>
+                                    <p class="retail">Retail</p>
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div style="clear:both"></div>
+
+                        </div>
+
+
+                        <article class="desc _2">
+                            
+                            <h2>Floor &amp; Space plans</h2>
+                            <p>Click to below to view floor plans and additional planning information</p>
+                            
+                        </article>
+
+                        <!-----------------HEADER  OF PLAN FLOOR-------------------->
+
+                        <div  class="planTableHeader">
+                            <div class="inner">
+                                <div class="data">
+                                    <p class="_0">Floor</p>
+                                    <p class="_0">SQ Ft</p>
+                                    <p class="_0">SQ M</p>
+                                </div>
+                                <p style="clear:both"></p>
+                            </div>
+                        </div>
+
+
+                        <div class="floorplans">
+
+                            
+                            <!-----------------SEVENTH FLOOR-------------------->
+                            
+                            <div  class="option fadeIn" data-delay=".1">
+                             <div class="inner">
+                               <div class="data">
+                                   <p class="_1">Seven</p>
+                                   <p class="_2">4,499</p>
+                                   <p class="_3">418</p>
+                               </div>
+                               <div class="_btn">
+                                <p>
+                                  <span class="hide"><span>+</span><span>View</span></span>
+                                  <span class="view"><span>x</span><span>Hide</span></span>
+                              </p>
+                          </div>
+                          <p class="clr"></p>
+                        </div>
+                        </div>
+
+
+                        <div class="floorplan">
+                            <div class="swapButtons">
+                                <a class="active floor-7-1"  data-target="0" data-jcarousel-control="true" data-jcarouselcontrol="true">Floor plan</a>
+                                <a class="floor-7-2" data-target="1"  data-jcarousel-control="true" data-jcarouselcontrol="true">Open plan 1</a>
+                                <a class="floor-7-3" data-target="2" data-jcarousel-control="true" data-jcarouselcontrol="true">Open plan 2</a>
+                            </div>
+
+                            <div class='surface'><h3>SEVENTH FLOOR</h3><p>4,499 SQ FT / 418 SQ M</p></div>
+                            
+                            <div class="plan">
+
+                                <div class="plans">
+                                    <img class="floor-7-1 active"  alt="" src="images/building/plans/7th_floor_plan.png" >
+                                    <img class="floor-7-2" alt="" src="images/building/plans/7th_floor_open_plan1.png" >
+                                    <img class="floor-7-3" alt="" src="images/building/plans/7th_floor_open_plan2.png">
+                                </div>
+
+                                <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                                <p class="noteright">BEDFORD AVENUE</p>
+                            </div>
+                            
+                            <div class="btm">
+                                <div class="legend">
+                                    <p class="office">Office</p>
+                                    <p class="terrace">Accessible Terrace</p>
+                                    <p class="green-roof">Green Roof</p>
+                                    <p class="core">Core</p>
+                                    <p class="plant">Plant</p>
+                                    <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+
+                        <!-----------------SIXTH FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".2">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">Sixth</p>
+                               <p class="_2">8,880</p>
+                               <p class="_3">825</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class="swapButtons">
+                                <a class="active floor-6-0" data-target="0" data-jcarousel-control="true" data-jcarouselcontrol="true">Floor plan</a>
+                                <a class="floor-6-1" data-target="1"  data-jcarousel-control="true" data-jcarouselcontrol="true">Open plan 1</a>
+                                <a class="floor-6-2" data-target="2" data-jcarousel-control="true" data-jcarouselcontrol="true">Open plan 2</a>
+                            </div>
+
+                            <div class='surface'><h3>SIXTH FLOOR</h3><p>8,880 SQ FT / 825 SQ M</p></div>
+                            
+                            <div class="plan">
+
+                                <div class="plans">
+                                    <img class="active floor-6-0" src="images/building/plans/6th_floor_plan.png">
+                                    <img class="floor-6-1" src="images/building/plans/6th_floor_open_plan1.png"> 
+                                    <img class="floor-6-2" src="images/building/plans/6th_floor_open_plan2.png">
+                                </div>
+
+
+                                <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                                <p class="noteright">BEDFORD AVENUE</p>
+                            </div>
+                            
+                            <div class="btm">
+                                <div class="legend">
+                                    <p class="office">Office</p>
+                                    <p class="terrace">Accessible Terrace</p>
+                                    <p class="green-roof">Green Roof</p>
+                                    <p class="core">Core</p>
+                                    <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+                        <!-----------------FIFTH FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".3">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">Fifth</p>
+                               <p class="_2">10,430</p>
+                               <p class="_3">969</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class='surface'><h3>FIFTH FLOOR</h3><p>10,430 SQ FT / 969 SQ M</p></div>
+                            
+                            <div class="plan">
+                               <img src="images/building/plans/5th_floor_plan.png"> 
+                               <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                               <p class="noteright">BEDFORD AVENUE</p>
+                           </div>
+                           
+                           <div class="btm">
+                                <div class="legend">
+                                    <p class="office">Office</p>
+                                    <p class="terrace">Accessible Terrace</p>
+                                    <p class="green-roof">Green Roof</p>
+                                    <p class="core">Core</p>
+                                    <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+
+
+                        <!-----------------FOURTH FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".4">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">FOURTH</p>
+                               <p class="_2">11,227</p>
+                               <p class="_3">1,043</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class="swapButtons">
+                                <a class="active floor-4-0" data-target="0">Floor plan</a>
+                                <a class="floor-4-1" data-target="1">Open plan</a>
+                            </div>
+
+                            <div class='surface'><h3>FOURTH FLOOR</h3><p>11,227 SQ FT / 1,043 SQ M</p></div>
+                            
+                            <div class="plan">
+
+                                <div class="plans">
+                                    <img class="active floor-4-0" src="images/building/plans/4th_floor_plan.png"> 
+                                    <img class="floor-4-1" src="images/building/plans/4th_open_plan.png"> 
+                                </div>
+
+                                <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                                <p class="noteright">BEDFORD AVENUE</p>
+                            </div>
+                            
+                            <div class="btm">
+                                <div class="legend">
+                                    <p class="office">Office</p>
+                                    <p class="terrace">Accessible Terrace</p>
+                                    <p class="green-roof">Green Roof</p>
+                                    <p class="core">Core</p>
+                                    <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+                        <!-----------------THIRD FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".5">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">THIRD</p>
+                               <p class="_2">11,948</p>
+                               <p class="_3">1,110</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class="swapButtons">
+                                <a class="active floor-3-0" data-target="0" data-jcarousel-control="true" data-jcarouselcontrol="true">Floor plan</a>
+                                <a class="floor-3-1" data-target="1"  data-jcarousel-control="true" data-jcarouselcontrol="true">Open plan</a>
+                            </div>
+
+                            <div class='surface'><h3>THIRD FLOOR</h3><p>11,948 SQ FT / 1,110 SQ M</p></div>
+                            
+                            <div class="plan">
+                                
+
+
+                                <div class="plans">
+                                    <img class="active floor-3-0" src="images/building/plans/3rd_floor_plan.png">  
+                                    <img class="floor-3-1" src="images/building/plans/3rd_open_plan.png">   
+                                </div>
+                                
+                                <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                                <p class="noteright">BEDFORD AVENUE</p>
+                            </div>
+                            
+                            <div class="btm">
+                               <div class="legend">
+                                   <p class="office">Office</p>
+                                   <p class="core">Core</p>
+                                   <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+
+                        <!-----------------SECOND FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".6">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">SECOND</p>
+                               <p class="_2">11,933</p>
+                               <p class="_3">1,109</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class='surface'><h3>SECOND FLOOR</h3><p>11,948 SQ FT / 1,110 SQ M</p></div>
+                            
+                            <div class="plan">
+                               <img src="images/building/plans/2nd_floor_plan.png"> 
+                               <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                               <p class="noteright">BEDFORD AVENUE</p>
+                           </div>
+                           
+                           <div class="btm">
+                               <div class="legend">
+                                   <p class="office">Office</p>
+                                   <p class="core">Core</p>
+                                   <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+
+
+                        <!-----------------FIRST FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".7">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">FiRST</p>
+                               <p class="_2">11,399</p>
+                               <p class="_3">1,059</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class='surface'><h3>FIRST FLOOR</h3><p>11,399 SQ FT / 1,059 SQ M</p></div>
+                            
+                            <div class="plan">
+                               <img src="images/building/plans/1st_floor_plan.png"> 
+                               <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                               <p class="noteright">BEDFORD AVENUE</p>
+                           </div>
+                           
+                           <div class="btm">
+                               <div class="legend">
+                                   <p class="office">Office</p>
+                                   <p class="core">Core</p>
+                                   <p class="lifts">Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+
+
+                        <!-----------------GROUND FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".8">
+                         <div class="inner">
+                           <div class="data">
+                               <p class="_1">GROUND</p>
+                               <p class="_2">9,493</p>
+                               <p class="_3">882</p>
+                           </div>
+                           <div class="_btn">
+                            <p>
+                                <span class="hide"><span>+</span><span>View</span></span>
+                                <span class="view"><span>x</span><span>Hide</span></span>
+                            </p>
+                        </div>
+                        <p class="clr"></p>
+                        </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class='surface'><h3>GROUND</h3><p>9,493 SQ FT / 882 SQ M</p></div>
+                            
+                            <div class="plan">
+                               <img src="images/building/plans/ground_floor_plan.png"> 
+                               <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                               <p class="noteright">BEDFORD AVENUE</p>
+                           </div>
+                           
+                           <div class="btm">
+                                <div class="legend">
+                                    <p class="office">Office</p>
+                                    <p class="retail">Retail</p>
+                                    <p class="core">Core</p>
+                                    <p class="plant">Plant</p>
+                                    <p class="lifts">Lifts</p>
+                                    <p class="service-lift">Service Lifts</p>
+                               </div>
+                               
+                               
+                               <p class="download">
+                                   <a href="#">Download Plans</a>
+                               </p>
+                               <p style="clear:both"></p>
+                           </div>
+                           <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                           
+                        </div>
+
+
+                        <!-----------------LOWER FLOOR-------------------->
+
+                        <div  class="option fadeIn" data-delay=".9">
+                            <div class="inner">
+                                <div class="data">
+                                    <p class="_1">LOWER GROUND</p>
+                                    <p class="_2">4,478</p>
+                                    <p class="_3">416</p>
+                                </div>
+                                <div class="_btn">
+                                    <p>
+                                        <span class="hide"><span>+</span><span>View</span></span>
+                                        <span class="view"><span>x</span><span>Hide</span></span>
+                                    </p>
+                                </div>
+                                <p class="clr"></p>
+                            </div>
+                        </div>
+
+                        <div class="floorplan">
+                            <div class='surface'><h3>LOWER GROUND</h3><p>4,478 SQ FT / 416 SQ M</p></div>
+                            
+                            <div class="plan">
+                                <img src="images/building/plans/lower_ground_floor_plan.png"> 
+                                <p class="notebtm">TOTTENHAM COURT ROAD</p>
+                                <p class="noteright">BEDFORD AVENUE</p>
+                            </div>
+                            
+                            <div class="btm">
+                                <div class="legend">
+                                    <p class="office">Office</p>
+                                    <p class="retail">Retail</p>
+                                    <p class="core">Core</p>
+                                    <p class="plant">Plant</p>
+                                    <p class="lifts">Lifts</p>
+                                    <p class="service-lift">Service Lifts</p>
+                                </div>
+                                
+                                
+                                <p class="download">
+                                    <a href="#">Download Plans</a>
+                                </p>
+                                <p style="clear:both"></p>
+                            </div>
+                            <p class="note">Floor plans not to scale. For indicative purposes only.</p>
+                            
+                        </div>
+
+
+                        </div>
+                    </div>
+
+                </section>
+                
+                <section class="social">
+                	<a class="twitter" href="#"></a>
+                    <h4>The avenue on Twitter</h4>
+                    <p>
+                        <strong>@theavenuelondon</strong><br><br>
+                        “Get a first look at the exciting new retailers set<br />
+                        to move to The Avenue. 
+                        <em><strong>#theavenuelondon #newlondonretail</strong></em>”
+                        <br /><br />
+                        <a class="cta" href="#">Follow</a>
+                    </p>
+                </section>
+              
+            </main>
+
+            <footer class="menu">
+            	<a class="logo" href="#"></a>
+                <strong>A development by Ashby Capital &amp; Exemplar</strong>
+                <nav>
+                    <a href="location.html">Location</a>
+                    <a href="lifestyle.html">Lifestyle</a>
+                    <a href="building.html" class="active">The Building</a>
+                    <a href="retail.html">Retail</a>
+                    <a href="developer.html">Developer</a>
+                    <a href="contact.html">Contact &amp; Downloads</a>
+                </nav>	
+                <p><a href="#">Privacy &amp; Legal</a> | <a href="http://HolyGunz.com">Made by HolyGunz.com</a></p>
+            </footer>
+
+    </div>
+
+    <div class="share-overlay" style="display:none;">
+        <div class="bg"></div>
+        <div class="form">
+            <a href="#" class="cta">Close</a>
+            <div class="email">
+                <strong>Email a brochure</strong> 
+                <p class="copy">Email a copy of The Avenue London Brochure below. Enter your email and destination email below</p>
+                <input type="text" name="recipient-email" value="Enter recipient email" />
+                <input type="text" name="your-email" value="Enter your email" />
+                <a href="#" class="cta formbtn">Send</a>
+            </div>
+            
+            <div class="share">
+                <strong>Share website link</strong> 
+                <p class="copy">Share a link to The Avenue London. Enter your email and destination email below</p>
+                <input type="text" name="recipient-email" value="Enter recipient email" />
+                <input type="text" name="your-email" value="Enter your email" />
+                <a href="#" class="cta formbtn">Share</a>
+            </div>
+            
+            <div class="downloads">
+                <strong>Downloads</strong> 
+                <p class="copy">Email a copy of London Brochure below</p>
+                <p class="option">Brochure</p>
+                <p class="option">Space Plans</p>
+                <p class="option">Specification</p>
+                <p class="option">Floor Plans</p>
+                <a href="#" class="cta formbtn">Download</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="popupForm" class="popup">
+        <a href="" class="cta b-close" id="my-button-close">x close</a>
+
+        <div class="oneBoxToShare">
+            <h2>Email a brochure</h2>
+            <form>
+                <p>Email a copy of The Avenue London brochure below. Enter your email, and destination below.</p>
+                <input placeholder="Enter recipient email" type="text">
+                <input placeholder="Enter your email" type="text">
+                <a href="" class="cta form-button form-button-1"  id="my-button-open-confirmation">Send</a>
+            </form>
+        </div>
+
+        <div class="oneBoxToShare">
+            <h2>Share website link</h2>
+            <form>
+                <p>Share a link to The Avenue London brochure below. Enter your email, and destination below.</p>
+                <input placeholder="Enter recipient email" type="text">
+                <input placeholder="Enter your email" type="text">
+                <a href="" class="cta form-button form-button-1"  id="my-button-open-confirmation">Share</a>
+            </form>
+        </div>
+
+        <div class="oneBoxToShare">
+            <h2>Download</h2>
+            <form>
+                <p>Select items below to download pdfs.</p>
+
+                <div class="downloads">
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_brochure.pdf" class="cta">Brochure</a>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_specification.pdf" class="cta">Specification</a><br/>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_floor_plans.pdf" class="cta">Floor Plans</a>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_space_plans.pdf" class="cta">Space Plans</a>
+                </div>
+                <a href="" class="cta form-button form-button-1" id="my-button-open-confirmation">Download</a>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="popupForm2" class="popup">
+        <div class="popup-content">
+         <h2>Thank you! </h2>
+         <p>Thank you for your interest in The Avenue.<br/>
+           <a href="" class="cta b-close" id="my-button-close">x close</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

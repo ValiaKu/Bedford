@@ -1,0 +1,194 @@
+{
+	"mapwidth":"1600",
+	"mapheight":"800",
+	"categories":[],
+	"levels":[
+		{
+			"id":"landmarks",
+			"title":"Bedford Map",
+			"map":"assets/images/map/bedford_map.svg",
+			"locations":[
+				{
+					"id": "corinthianHouseWcOne",
+					"title": "Corinthian House, WC1",
+					"description": "<p><span>Size:</span> 22,000 sq ft</p><p><span>Status:</span> Completion 2020</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.6120",
+					"y": "0.5240"
+				},
+				{
+					"id": "oxfordHouseWOne",
+					"title": "Oxford House, W1",
+					"description": "<p><span>Size:</span> 90,000 sq ft</p><p><span>Status:</span> Completion 2019</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.1940",
+					"y": "0.5980"
+				},
+				{
+					"id": "oneOxfordStreet",
+					"title": "1 Oxford Street, W1",
+					"description": "<p><span>Size:</span> 57,400 sq ft</p><p><span>Status:</span> Completion 2020</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.5330",
+					"y": "0.6160"
+				},
+				{
+					"id": "twentySohoSquare",
+					"title": "20 Soho Square, W1",
+					"description": "<p><span>Size:</span> 60,000 sq ft</p><p><span>Status:</span> Completion 2016</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.4630",
+					"y": "0.6790"
+				},
+				{
+					"id": "oneStephenStreet",
+					"title": "1 Stephen Street, W1",
+					"description": "<p><span>Size:</span> 44,200 sq ft</p><p><span>Status:</span> Complete</p><p><span>Occupiers:</span>  Anacap, Fremantle Media, Encompass Digital, Media, Freud Communications, BrandOpus</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.4030",
+					"y": "0.2790"
+				},
+				{
+					"id": "foyles_1_",
+					"title": "Foyles, W1",
+					"description": "<p><span>Size:</span> 225,000 sq ft</p><p><span>Status:</span> Completion 2019</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.5650",
+					"y": "0.8420"
+				},
+				{
+					"id": "twentyTwoBloomsburyStreet",
+					"title": "22 Bloomsbury Street, W1",
+					"description": "<p><span>Size:</span> 34,200 sq ft</p><p><span>Status:</span> Completion 2017</p>",
+					"pin": "hidden",
+					"fill": "#e3bfa6",
+					"x": "0.9020",
+					"y": "0.4540"
+				},
+				{
+					"id": "newOxfordStreet",
+					"title": "79-93 New Oxford St, W1",
+					"description": "<p><span>Size:</span> 88,100 sq ft</p><p><span>Status:</span> Completion 2017</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.7970",
+					"y": "0.5680"
+				},
+				{
+					"id": "oneHundredNewOxfordStreet",
+					"title": "100 New Oxford Street, W1",
+					"description": "<p><span>Size:</span> 85,000 sq ft</p><p><span>Status:</span> Completion 2015</p><p><span>Occupiers:</span> William Morris, Endeavor, Space Ape Games, Stanhope Plc, Weve</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.7210",
+					"y": "0.5060"
+				},
+				{
+					"id": "nimaxWcOne",
+					"title": "Nimax, W1",
+					"description": "<p><span>Size:</span> 86,000 sq ft</p><p><span>Status:</span> Completion 2019</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.5550",
+					"y": "0.7080"
+				},
+				{
+					"id": "elevenSohoStreet",
+					"title": "11 Soho Street, W1",
+					"description": "<p><span>Size:</span> 48,500 sq ft</p><p><span>Status:</span> Completion 2015</p><p><span>Occupier:</span> St. Ives Group</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.3120",
+					"y": "0.6450"
+				},
+				{
+					"id": "ampersandBuilding",
+					"title": "Ampersand Building, W1",
+					"description": "<p><span>Size:</span> 88,373 sq ft</p><p><span>Status:</span> Completion 2015</p><p><span>Occupier:</span> King.com</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.0960",
+					"y": "0.6800"
+				},
+				{
+					"id": "oneDeanStreet",
+					"title": "1 Dean Street, W1",
+					"description": "<p><span>Size:</span> 88,100 sq ft</p><p><span>Status:</span> Completion 2017</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.2170",
+					"y": "0.6860"
+				},
+				{
+					"id": "holdenHouse",
+					"title": "Holden House, W1",
+					"description": "<p><span>Size:</span> 126,000 sq ft</p><p><span>Status:</span> Completion 2020</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.2660",
+					"y": "0.5710"
+				},
+				{
+					"id": "oneRathboneSquare",
+					"title": "One Rathbone Square, W1",
+					"description": "<p><span>Size:</span> 292,000 sq ft</p><p><span>Status:</span> Completion 2017</p><p><span>Occupier:</span> Facebook</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.1820",
+					"y": "0.4670"
+				},
+				{
+					"id": "twoStephenStreet",
+					"title": "2 Stephen Street, W1",
+					"description": "<p><span>Size:</span> 88,989 sq ft</p><p><span>Status:</span> Complete</p><p><span>Occupiers:</span> Fremantle Media, The Office Group, Freud Communications</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.4045",
+					"y": "0.3780"
+				},
+				{
+					"id": "fifteenRathbonePlace",
+					"title": "15/18 Rathbone Place, W1",
+					"description": "<p><span>Size:</span> 14,876 sq ft</p><p><span>Status:</span> Completion 2018</p><p><span>Occupier:</span> Nickelodeon</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.2440",
+					"y": "0.4930"
+				},
+				{
+					"id": "thePanAlley",
+					"title": "Tin Pan Alley, W1 ",
+					"description": "<p><span>Size:</span> 103,500 sq ft</p><p><span>Status:</span> Completion 2020</p>",
+					"pin": "hidden",
+					"fill": "#a3aec1",
+					"x": "0.6540",
+					"y": "0.7150"
+				},
+				{
+					"id": "oxfordStreet",
+					"title": "4/48 Oxford Street, W1",
+					"description": "<p><span>Size:</span> 76,500 sq ft</p><p><span>Status:</span> Completion 2020</p>",
+					"pin": "hidden",
+					"fill": "#c1b6c8",
+					"x": "0.4010",
+					"y": "0.5460"
+				},
+				{
+					"id": "centrepoint",
+					"title": "Centre Point, W1",
+					"description": "<p><span>Size:</span> 41,780 sq ft</p><p><span>Status:</span> Completion 2018</p>",
+					"pin": "hidden",
+					"fill": "#c1b6c8",
+					"x": "0.6580",
+					"y": "0.6120"
+				}
+			]
+		}
+	]
+}

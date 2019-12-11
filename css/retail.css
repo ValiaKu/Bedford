@@ -1,0 +1,104 @@
+/****************************************/
+/****************RETAIL****************/
+/****************************************/
+
+/******************TOP*******************/
+
+.retail .top {
+	height: 1080px;
+	background:url(../images/retail/main.jpg) no-repeat center;
+}
+
+.retail .message p._1 {
+	margin:-220px 0px 0px 0px;
+	background:url(../images/retail/icon.png) no-repeat center;
+	height:220px;
+}
+
+.retail .message p._2 {
+	margin:70px 0px 0px 0px;
+}
+
+
+
+/**************CONTENT**************/
+
+
+ #accommodation {
+ 	padding-bottom: 70px;
+ }
+
+ body.retail #wrapper {
+	background-color: #e3deda;
+ }
+
+ .note {
+ 	font-size: 90%;
+ 	text-align: left;
+ 	margin-top: 30px;
+ }
+ .legend {
+ 	bottom: 0px;
+	margin: 0;
+	padding-bottom: 70px;
+	padding-left: 0;
+ }
+ #developments .legend {
+ 	padding-left: 100px;
+ }
+ .floorplan .legend {
+ 	left: 0;
+ 	top: -50px;
+ 	padding-bottom:0;
+ }
+.areas .specs .row .legend p {
+	display: inline-block;
+	margin: 0px 65px 0px 0px;
+}
+.content article.summary {
+	padding-top: 70px;
+}
+.content .summary .dwn {
+	margin-bottom: 160px;
+}
+
+.summary .col strong {
+	display: block;
+}
+
+.content .desc h3,
+.content .desc h4,
+.building .desc {
+	padding: 0px 0px 30px;
+}
+
+#developments .desc h3.narrow { padding: 0px 0px 30px; }
+
+#overview {
+
+padding-bottom: 70px;
+}
+
+#overview .lazy {
+	margin: 0 auto;
+	display: block;
+}
+
+#developments .desc .narrow, #overview .desc .narrow {
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+#button-tap-2 {
+	margin-bottom: 70px;
+}
+
+.occupier img {
+
+}
+
+#commercial .development {
+	overflow: hidden; /* fix for Firefox */
+	break-inside: avoid-column;
+	-webkit-column-break-inside: avoid;
+}

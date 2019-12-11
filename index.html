@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Avenue</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/mobile.css" type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css" />
+
+    <!--[if lte IE 8]>
+    <script data-src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/jquery.lazyload.min.js?v=1.9.7"></script>
+    <script src="js/jquery.onscreen.js"></script>
+    <script src="js/jquery.bpopup.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/nav.js"></script>
+    <style>#popupForm { display:none; } #popupForm2 { display:none; }</style>
+
+    <script type="text/javascript">
+        ;(function($) {
+             // DOM Ready
+             $(function() {
+                $('#my-button').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#popupForm').bPopup();
+                });
+
+                $('.form-button-1').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#popupForm2').bPopup();
+                });         
+            });
+         })(jQuery);
+     </script>
+
+</head>
+
+<body class="home">
+
+    <div class="header-wrapper">
+        <header class="header">
+            <div class="nav-wrapper">
+                <figure class="header-image"></figure>
+                <nav class="nav" role="navigation">
+                    <h2 class="nav-logo"><a href="/">The Avenue</a></h2>
+                    <div class="nav-trigger" role="button"><span></span></div>
+        
+                    <ul>
+                        <li>
+                            <a href="location.html">Location</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#area">Area</a></li>
+                                <li><a href="#regeneration">Regeneration</a></li>
+                                <li><a href="#transport">Transport</a></li>
+                                <li><a href="#occupiers">Local Occupiers</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="lifestyle.html">Lifestyle</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#amenities">Local Amenities</a></li>
+                                <li><a href="#leisure">Leisure</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="building.html">The Building</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Building Overview</a></li>
+                                <li><a href="#specification">Summary Specification</a></li>
+                                <li><a href="#accommodation">Accommodation</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="retail.html">Retail</a>
+                            <ul class="subnav">
+                                <li><a href="#overview">Overview</a></li>
+                                <li><a href="#developments">Local Developments</a></li>
+                                <li><a href="#retailers">Local Retailers</a></li>
+                                <li><a href="#accommodation">Accommodation</a></li>
+                                <li><a href="#specification">Specification</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="developer.html">Developer</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact & Downloads</a>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="cta shareButton" role="button" id="my-button">+ SHARE</span>
+            </div>
+
+            <h1>
+                <span class="first-line">One Location</span>
+                <span class="second-line">Endless Possibilities</span>
+            </h1>
+        
+            <span class="scroll-down-arrow" role="button"></span>
+        </header>
+    </div>
+
+    <div class="header-placeholder"></div>
+
+    <div id="wrapper">
+
+        <main>
+            
+            <section class="content">
+            
+                <div class="column left">
+            
+                    <article class="_1 fadeIn">
+                        <div class="inner">
+                           <h3>Your new home in the heart of London’s West End</h3>
+                           <p>Offering 71,300 sq ft of high
+                            specification office space, the avenue
+                            is at the forefront of the Tottenham
+                            court road transformation.
+                            <br><br><a class="cta" href="building.html#accommodation">FIND OUT MORE</a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <div class="img _2 fadeIn" data-delay=".25"><img data-src="images/home/img2-left.jpg" class="lazy" ></div>
+
+                    <div class="img _3 fadeIn" data-delay=".25"></div>
+
+                    <div class="img _4 fadeIn" data-delay=".25"><img data-src="images/home/img4-left.jpg" class="lazy"><img data-src="images/home/img1.jpg" class="tablet lazy"  ></div>
+
+                    <article class="_5 fadeIn" data-delay=".25">
+                       <div class="inner">
+                            <h3>World Class</h3>
+                            <p>Situated amongst a diverse mix of world-class amenities and lifestyle, The Avenue is rich with culture, lifestyle and unique local amenities.<br><br><a class="cta" href="lifestyle.html">FIND OUT MORE</a>
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="column right">
+                    
+                   <div class="img _1 fadeIn"><img data-src="images/home/img1-right.jpg" class="lazy"><img data-src="images/home/img2.jpg" class="tablet lazy"></div>
+                   
+                   <article class="_2 fadeIn" data-delay=".25">
+                        <div class="inner">
+                            <h3>ICONIC DESIGN</h3>
+                            <p>21st century working requires a 21st century office. 
+                                The Avenue is a modern working environment with excellent
+                                facilities that meets the needs of a team motivated to excel.
+                                <br><br><a class="cta" href="building.html">FIND OUT MORE</a>
+                            </p>
+                        </div>
+                    </article>
+
+                    <div class="img _4 fadeIn" data-delay=".25">
+                        <img data-src="images/home/img4-right.jpg" class="lazy"><img data-src="images/home/img3.jpg" class="tablet lazy">
+                        <div class="img _3 fadeIn" data-delay=".25"></div>
+                    </div>
+                        
+                </div>
+
+            </section>
+
+            <section class="social">
+               <a class="twitter" href="#"></a>
+               <h4>THE AVENUE ON TWITTER</h4>
+               <p><strong>@theavenuelondon</strong><br><br>
+                “Get a first look at the exciting new retailers set<br>
+                to move to The Avenue. <em><strong>#theavenuelondon #newlondonretail</strong></em>”<br><br><a class="cta" href="https://twitter.com/theavenuelondon">FOLLOW</a></p>
+            </section>
+
+        </main>
+
+        <footer class="menu">
+
+        	<a class="logo" href="#"></a>
+            <strong>A development by Ashby Capital, Exemplar and The Bedford Estates</strong>
+            <nav>
+                <a href="location.html">Location</a>
+                <a href="lifestyle.html">Lifestyle</a>
+                <a href="building.html">The Building</a>
+                <a href="retail.html">Retail</a>
+                <a href="developer.html">Developer</a>
+                <a href="contact.html">Contact &amp; Downloads</a>
+            </nav>	
+            <p><a href="#">Privacy & Legal</a> | <a href="http://HolyGunz.com">Made by HolyGunz.com</a></p>
+        	
+        </footer>
+
+    </div>
+
+    <div class="share-overlay" style="display:none;">
+
+    	<div class="bg"></div>
+    	<div class="form">
+        	<a href="#" class="cta">Close</a>
+            
+            <div class="email">
+           		<strong>Email a brochure</strong> 
+                <p class="copy">Email a copy of The Avenue London Brochure below. Enter your email and destination email below</p>
+                <input type="text" name="recipient-email" value="Enter recipient email" />
+                <input type="text" name="your-email" value="Enter your email" />
+                <a href="#" class="cta formbtn">Send</a>
+            </div>
+            
+            <div class="share">
+           		<strong>Share website link</strong> 
+                <p class="copy">Share a link to The Avenue London. Enter your email and destination email below</p>
+                <input type="text" name="recipient-email" value="Enter recipient email" />
+                <input type="text" name="your-email" value="Enter your email" />
+                <a href="#" class="cta formbtn">Share</a>
+            </div>
+            
+            <div class="downloads">
+           		<strong>Downloads</strong> 
+                <p class="copy">Email a copy of London Brochure below</p>
+                <p class="option">Brochure</p>
+                <p class="option">Space Plans</p>
+                <p class="option">Specification</p>
+                <p class="option">Floor Plans</p>
+                <a href="#" class="cta formbtn">Download</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="popupForm" class="popup">
+        <a href="" class="cta b-close" id="my-button-close">x close</a>
+
+        <div class="oneBoxToShare">
+            <h2>Email a brochure</h2>
+            <form>
+                <p>Email a copy of The Avenue London brochure below. Enter your email, and destination below.</p>
+                <input placeholder="Enter recipient email" type="text">
+                <input placeholder="Enter your email" type="text">
+                <a href="" class="cta form-button form-button-1"  id="my-button-open-confirmation">SEND</a>
+            </form>
+        </div>
+
+        <div class="oneBoxToShare">
+            <h2>Share website link</h2>
+            <form>
+                <p>Share a link to The Avenue London brochure below. Enter your email, and destination below.</p>
+                <input placeholder="Enter recipient email" type="text">
+                <input placeholder="Enter your email" type="text">
+                <a href="" class="cta form-button form-button-1"  id="my-button-open-confirmation">Share</a>
+            </form>
+        </div>
+
+        <div class="oneBoxToShare">
+            <h2>Download</h2>
+            <form>
+                <p>Select items below to download pdfs.</p>
+
+                <div class="downloads">
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_brochure.pdf" class="cta">Brochure</a>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_specification.pdf" class="cta">Specification</a><br/>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_floor_plans.pdf" class="cta">Floor Plans</a>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_space_plans.pdf" class="cta">Space Plans</a>
+                </div>
+                <a href="" class="cta form-button form-button-1" id="my-button-open-confirmation">Download</a>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="popupForm2" class="popup">
+        <div class="popup-content">
+         <h2>Thank you! </h2>
+         <p>Thank you for your interest in The Avenue.<br/>
+           <a href="" class="cta b-close" id="my-button-close">x close</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

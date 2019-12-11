@@ -1,0 +1,926 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (max-width: 1600px)  {
+	
+	#regeneration .legend {
+		margin:0px 0px 0px 0px;
+		padding:0px 50px;
+	}
+	
+	.menu {
+		width:100%;
+		left:0px;
+		margin:0px 0px 0px 0px;
+	}
+	
+	.transportmap .desc article {
+		padding:0px 15%;
+	}
+	
+	.home .content .column {
+		position: relative;
+		width:45%;
+	}
+	
+	.home .content div.left .img._3 {
+		width:200px; 
+		height:200px;
+		margin:30% 0px 0px -100px;
+		background-size:contain;
+	}
+	
+	.home .content div.right .img._3 {
+		width:200px; 
+		height:200px;
+		background-size:contain;
+	}
+
+	.tooltip._1600 {display:inline-block !important;}
+	
+}
+
+
+@media only screen and (max-width: 1400px)  {
+
+	.occupiers .occupier,
+	.occupiers .occupierbtm,
+	.transportations .transportation,
+	.transportations .transportationbtm,
+	.activities .activity,
+	.activities .activitybtm{
+		width:23%;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+
+	.occupiers .occupierbtm,
+	.transportations .transportationbtm,
+	.activities .activitybtm {
+	display: none;
+}
+	.areas {
+		padding:0px 50px;
+	}
+	
+	.floorplans .option .inner,
+	.planTableHeader .inner {
+		padding:0px 50px;
+	}
+	
+	.floorplans .floorplan {
+		padding:50px 50px;
+	}
+	
+	.floorplans .option .inner .data,
+	.planTableHeader .inner .data{
+		left:50px; right:150px;
+	}
+	
+	.contact .downloads a  {
+		margin:10px 15px
+	}
+
+}
+
+
+@media only screen and (max-width: 1024px)  {
+	.occupiers .occupier,
+	.occupiers .occupierbtm,
+	.transportations .transportation,
+	.transportations .transportationbtm,
+	.activities .activity,
+	.activities .activitybtm{
+		width:35%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.jcarousel {
+	width: 800px;
+}
+.floorplans .floorplan .plan .noteright {
+	right: -30px;
+}
+	.cta.shareButton {
+		left: 20px;
+		top: 20px;
+		right: auto;
+	}
+	.popup .b-close {
+		margin-bottom: 50px !important;
+		margin-top: 20px !important;
+	}
+	.gallery .prev {
+		left: 20px;
+	}
+	.gallery .next {
+		right: 20px;
+	}
+	.gallery .imgs p {
+		bottom: 30px;
+	}
+	.gallery .pager {
+		bottom: 5px;
+	}
+	.map-regeneration .inner {
+		min-width: 100%;
+	}
+	.contact .col {
+		width:80%;
+		margin:20px 0px;
+		max-width:400px;
+		color:#4d4d4d;
+	}
+	
+	.contact .downloads {
+		max-width:600px;
+		margin:0px auto;
+	}
+	
+	.contact .downloads a  {
+		margin:10px 15px;
+	}
+	
+	.disclaimer {
+		margin:100px auto 0px;
+		max-width:500px;
+	}
+
+
+
+#wrapper .message p._1 {
+	margin:-290px 0px 0px 0px;
+	height:220px;
+}
+.home #wrapper .message p._1 {
+	margin:-65px 0px 0px 0px;
+	height:220px;
+}
+
+#wrapper .message p._2 {
+	margin:0px 0px 0px 0px;
+}
+.developer #wrapper  .message p._2{
+	margin:-65px 0px 0px 0px;
+}
+
+	
+}
+
+@media only screen and (max-width: 850px)  {
+
+	.cta.shareButton {
+		display: none;
+	}
+	
+	.content .summary {
+		width:auto;
+		max-width:480px !important;
+		padding:65px 20px !important;
+		margin:0px auto !important;
+	}
+	
+	.content .summary .col {
+		width:auto !important;
+		display:block;
+	}
+	
+	.areas .specs {
+		width:auto;
+		float:none;
+		padding:50px 0px 0px;
+	}
+	
+	.areas .buildingplan {
+		text-align:center;
+		width:auto;
+		float:none;
+	}
+	
+	#accommodation .desc._1 {
+		padding:65px 0px 0px;
+	}
+	
+	.floorplans .floorplan .plan .noteright  {
+		right:-30px;
+	}
+	
+	.floorplans .floorplan .plan  {
+		margin:0px -30px;
+	}
+	
+	.floorplans .floorplan .btm {
+		padding:50px 0px 0px;
+	}
+	
+	.areas {
+		padding:0px 30px;
+	}
+	
+	.floorplans .option .inner,
+	.planTableHeader .inner {
+		padding:0px 30px;
+	}
+	
+	.floorplans .floorplan {
+		padding:50px 30px;
+	}
+	
+	.floorplans .option .inner .data,
+	.planTableHeader .inner .data {
+		left:30px; right:150px;
+	}
+	
+	
+	.amenity {
+		width:30%;
+	}
+
+
+	
+}
+
+@media only screen and (max-width: 768px)  {
+	.amenities {
+		height: 2400px !important;
+	}
+		.floorplans {
+		max-width: 768px;
+		overflow: hidden;
+	}
+	.swapButtons {
+		width: 700px;
+	}
+	.floorplans .floorplan {
+		max-width: 750px;
+	}
+	.floorplans .floorplan .jcarousel li img {
+		width: 700px !important;
+		height: auto !important;
+	}
+	.jcarousel {
+	width: 700px;
+}
+	
+
+	
+	 .home #wrapper .message p._1 {
+		margin:3px 0px 0px 0px;
+		font-size:25px;
+		letter-spacing: 5px;
+	}
+	
+	.home #wrapper .message p._2 {
+		margin:38px 0px 0px 0px;
+		font-size:25px;
+		letter-spacing: 5px;
+	}
+	
+	
+	
+	
+
+	
+	#wrapper  .message p._1 {
+		margin:-65px 0px 0px 0px;
+		background-size:contain;
+		height:150px;
+	}
+	
+	#wrapper  .message p._2 {
+		margin:100px 0px 0px 0px;
+		font-size:28px;
+	}
+	
+	
+	.developer #wrapper  .message p._2{
+	margin:100px 0px 0px 0px;
+}
+
+	.tablet {display:block !important;}
+	
+	/******************MENU****************/
+	
+	
+	.top {
+		height: 580px !important;
+		background-size:auto 580px !important;
+		background-position:center top !important;
+	}
+	
+	.message {
+		min-height:580px;
+		max-height:580px;
+	}
+
+.mobSub {
+	display: block;
+}
+.content .submenu.alternateSub {
+	display: none;
+}
+	.menu.active {
+		height:100%;
+		background:#6f8cb0;
+		display:table;
+		padding:0px 0px 0px;
+	}
+	
+	.menu.active .inner {
+		display:table-cell;
+		vertical-align:middle;
+		position:relative;
+	}
+	
+	.menu nav {
+		display:none;
+	}
+	
+	.menu.active nav {
+		display:block;
+		padding:0px 0px 0px;
+	}
+	
+	.menu.active nav a {
+		display:block;
+		padding:10px 0px;
+		text-align:center;
+		font-size:18px;
+		line-height:25px;
+	}
+	
+	.menu.active nav a.active {
+		color: #fff;
+	}
+	.menu .subnav {
+		position:static;
+		width:auto;
+		height:auto;
+		background:none;
+	}
+	
+	.menu.active .subnav a {
+		padding:5px 0px;
+		font-size:14px;
+		line-height:18px;
+		color:#fff;
+	}
+	
+	.menu.active .subnav a.active{
+		color:#fff;
+		text-decoration:underline;
+	}
+	
+	.menu.active nav a:hover {
+		color:#ffffff;
+		text-decoration:underline;
+	}
+	
+	.menu.active .logo {
+		display:none;
+	}
+	
+	.menu.alternate {
+		/*background:#4b4b4c url(../images/logo-min.png) no-repeat 25px center;*/
+		height:60px;
+	}
+	
+	.menu.alternate .logo {
+		height:60px;
+		left:10px;
+	}
+	
+	.menu.active.alternate {
+		height:100%;
+		background:#6f8cb0;
+	}
+	
+	.menu .mobilemenu {
+		display:block;
+		top:15px;
+	}
+	
+	.menu.active .mobilemenu {
+		display:none;
+	}
+	
+	.menu .closemobile {
+		width:30px; height:30px;
+		position:absolute;
+		top:50px; left:50%; 
+		margin:0px 0px 0px -15px;
+		background:url(../images/closeicon.png);
+	}
+	
+	.menu.active .closemobile {
+		display:block;
+	}
+	
+	.location .content {
+		padding:0px 0px 80px;
+	}
+		
+	.submenu {
+		display:none;
+	}
+	
+	
+	/************HOME************/
+	
+	.home .content {
+		/*padding:75px 30px;*/
+	}
+	
+	.home .column {
+		display:block !important;
+		width:auto !important;
+		padding:0px !important;
+		margin:0px !important;
+	}
+	
+	.home .column>* {
+		margin:0px !important;
+		float:none !important;
+		height:auto !important;
+	}
+	
+	.home .column img {
+		width:100% !important;
+		height:auto !important;
+	}
+	
+	
+	
+	.home .column.left .img._2,
+	.home .column.left .img._3,
+	.home .column.right .img._3 {
+		display:none;
+	}
+	
+	
+	.home .column article  {
+		display:block !important;
+		width:auto;
+	}
+	
+	.home .column article .inner {
+		display:block !important;
+		padding:200px 25px 95px !important;
+		max-width:450px;
+		margin:0px auto;
+	}
+	
+	.home .column.left ._1 .inner {
+		background: #6d8cb2 url(../images/home/drop.png) no-repeat center 80px;
+		
+	}
+	
+	.home .column.left ._5  .inner{
+		background: #6d8cb2 url(../images/home/woldclass.png) no-repeat center 80px;
+	}
+	
+	.home .column.right ._2  .inner{
+		background: #6d8cb2 url(../images/home/iconic.png) no-repeat center 80px;
+	}
+	
+	.home .column .img img {
+		display:none;
+	}
+	
+	.home .column .img img.tablet {
+		display:block;
+	}
+	
+	
+	
+	
+	
+	.content .desc {
+		width:auto;
+		padding:65px 20px !important;
+	}
+	
+	 .content #overview .desc {
+		padding:70px 20px 55px !important;
+	}
+	
+	.transportmap>div {
+		display:block;
+		width:100%;
+	}
+	
+	.transportmap .desc {
+		display:block;
+		max-width:none;
+		background:#6f8cb0;
+		color:#ffffff;
+		padding:110px 0px 140px !important;
+	}
+	
+
+	.traveloptions .traveloption,
+	.traveloptions .traveloptionbtm{
+		width:45%;
+	}
+	
+	.traveloptions .traveloptionbtm._1,
+	.traveloptions .traveloptionbtm._2{
+		display:none;
+	}
+	
+	
+	
+	.occupiers .occupier,
+	.occupiers .occupierbtm,
+	.transportations .transportation,
+	.transportations .transportationbtm,
+	.activities .activity,
+	.activities .activitybtm{
+		width:40%;
+		margin-left: 2%;
+		margin-right: 3%;
+	}
+	
+	.occupiers .occupierbtm._1,
+	.occupiers .occupierbtm._2,
+	.transportations .transportationbtm._1,
+	.transportations .transportationbtm._2
+	{
+		display:none;
+	}
+	
+
+	
+	
+	.activities .activitybtm._1,
+	.activities .activitybtm._2{
+		display:none;
+	}
+	
+	
+	.location .routes .legend {
+		position:static;
+		padding:20px 20px 0px;
+	}
+	
+	.location .routes span {
+		display:block;
+		padding:3px 0px;
+	}
+	
+	.map-overview .inner {
+		width:auto;
+	}
+.toggleleMapInner {width:1024px !important;}
+.toggleleMap {width:inherit;height: 250px; overflow:auto;};
+	.tooltip.tablet {display:inline-block !important;}
+	.tooltip._1600 {display:none !important;}
+	
+	#regeneration .desc._2 {
+		padding:75px 20px 45px !important;
+	}
+	
+	.map-regeneration {
+		padding:0px 20px;
+	}
+	
+	.map-regeneration .developments {
+		position:static;
+		width:auto;
+		height:auto;
+		padding:10px 20px;
+		display:none;
+		background:#8ca2bf;
+	}
+	
+	.map-regeneration .developments.active {
+		display:block;
+	}
+	
+	.map-regeneration .development {
+		position:static;
+		text-align:left;
+	}
+	
+	.map-regeneration .development>div {
+		position: static;
+		width: auto;
+		text-align: left;
+		margin: 0px 0px 0px 0px;
+	}
+	
+	.map-regeneration .development>div p {
+		padding:12px 5px;
+		background:#8ca2bf;
+		display:block;
+		font-size:14px;
+	}
+	
+	.map-regeneration .inner {
+		background:none;
+		position:relative;
+		width:auto;
+		height:auto;
+	min-width: 300px;
+	}
+	
+	.mapmenu {
+		display:block;
+	}
+	
+	#regeneration .legend {
+		display:none;
+	}
+	
+	
+	.amenity {
+		width:47%;
+	}
+	
+	.developer .col {
+		display:block;
+		margin:0px auto !important;
+		width:100%;
+	}
+	
+	.developer .col.exemplar {
+		margin:50px auto 0px !important;
+	}
+	
+
+}
+
+@media only screen and (max-width: 660px)  {
+
+	
+}
+@media only screen and (max-width: 550px)  {
+	.activities .prev.mobile,
+	.transportations .prev.mobile,
+	.occupiers .prev.mobile {
+		left: -50px;
+	}
+	.activities .next.mobile,
+	.transportations .next.mobile,
+	.occupiers  .next.mobile{
+		right: -50px;
+	}
+	.activities .activity, 
+	.transportations .transportation,
+	.occupiers .occupier
+	{
+		height: 380px !important;
+	}
+	.amenity h3 {
+		padding-bottom: 10px;
+	}
+	.floorplans {
+		max-width: 550px;
+		overflow: hidden;
+	}
+	.swapButtons {
+		width: 350px;
+	}
+	.swapButtons  a {
+		margin-bottom: 5px;
+	}
+	
+	footer.menu strong {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	footer.menu {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.tooltip.tablet.notMobile {
+		display: none !important;
+	}
+	.lifestyle .gallery {
+	height:auto;
+	min-height: 175px;
+}
+
+.lifestyle .gallery .imgs .slide {
+	height: 100%;
+	min-height: 175px;			
+}
+	.content .submenu a {
+		letter-spacing: 0;
+		margin: 0 5px;
+	}
+	.mobile {display:block !important;}
+	._mobile {display:none;}
+	
+	.traveloptions {
+		width:300px;
+	}
+	
+	.traveloptions .traveloption{
+		box-sizing:border-box;
+		float:left;
+		width:300px !important;
+		display:block;
+		margin:0px;
+		text-align:center !important;
+		padding:35px 30px 45px;
+		border-bottom:2px solid #4d4d4d;
+
+	}
+	
+	.traveloptions .traveloptionbtm {
+		display:none;
+	}
+	
+	
+	.caroufredsel_wrapper {
+		height: 380px !important;
+	}
+	.occupiers,
+	.transportations 
+	{
+		width:300px;
+		height: 440px;
+	}
+
+	.caroufredsel_wrapper  .inner {
+		height: 380px !important;
+	}
+	
+	.activities {
+		width:300px;
+		padding:0px 0px 20px;
+	}
+	
+	.occupiers .occupier,
+	.transportations  .transportation{
+		box-sizing:border-box;
+		float:left;
+		width:300px !important;
+		display:block;
+		margin:0px;
+		text-align:center !important;
+		padding:35px 30px 45px;
+		border-bottom:2px solid #4d4d4d;
+
+	}
+	
+	.activities .activity,
+	.transportations .transportation {
+		box-sizing:border-box;
+		float:left;
+		width:300px !important;
+		display:block;
+		margin:0px;
+		text-align:center !important;
+		padding:35px 30px 45px;
+		border-bottom:2px solid #4d4d4d;
+		min-height:300px;
+	}
+	
+	.occupiers .occupierbtm,
+	.transportations .transportationbtm {
+		display:none;
+	}
+	
+	.activities .activitybtm {
+		display:none;
+	}
+	
+	
+	.home .message p._1 {
+		margin:0px 0px 0px 0px;
+		font-size:28px;
+		line-height:35px;
+	}
+	
+	.home .message p._2 {
+		margin:35px 0px 0px 0px;
+		font-size:28px;
+		line-height:35px;
+		padding:0px 30px;
+		
+	}
+/*	
+	.amenity h3 {
+		display:none;
+	}
+		.amenity .copy p {
+		display:none;
+	}
+	*/
+	.amenity .copy h4 {
+		padding:0px 0px;
+	}
+	
+
+	
+	.amenities-selector .category {
+		width:100%;
+	}
+	
+	
+	
+	.home .content {
+		/*padding:80px 0px;*/
+	}
+	
+	
+	.lifestyle .content {
+		padding:0px 0px 80px;
+	}
+	
+	
+	.contact .col {
+		width:auto;
+		max-width:none !important;
+	}
+	
+	.contact .col p {
+		padding:0px 0px 0px 100px;
+	}
+	
+	.contact .col.cbre p {
+		background-size:80px auto;
+	}
+	
+	.contact .col.savills p {
+		background-size:60px auto;
+	}
+	
+	
+}
+
+
+@media only screen and (max-width: 470px)  {
+	.amenities {
+		height: 4800px !important;
+	}
+	.amenity {
+		width: 100%;
+		max-width: 400px;
+	}
+	.amenity .img img {
+		margin-top: 30px;
+	}
+	.amenity h3 {
+		margin-top: 20px;
+	}
+
+	.tooltip {
+		width: 100%;
+	}
+	.floorplans .floorplan .btm {
+	}
+	
+	.floorplans .floorplan .btm .legend {
+		width:auto;
+		text-align:center;
+		float:none;
+	}
+	
+	.floorplans .floorplan .btm .legend p {
+		display:inline-block;
+		padding:2px 0px 2px 25px;
+	}
+	
+	.floorplans .floorplan .download  {
+		padding:20px 0px 0px;
+		text-align:center;
+		float:none;
+	}
+	
+	.floorplans .floorplan .note  {
+		text-align:center;
+	}
+	
+	.areas {
+		padding:0px 20px;
+	}
+	
+	.floorplans .option .inner,
+	.planTableHeader .inner {
+		padding:0px 20px;
+	}
+	
+	.floorplans .floorplan {
+		padding:50px 20px;
+	}
+	
+	.floorplans .option .inner .data,
+	.planTableHeader .inner .data {
+		left:20px; right:100px;
+	}
+	
+	.transportmap {
+		margin:80px 0px 15px;
+	}
+	
+	.transportmap .desc {
+		padding:80px 0px 100px !important;
+	}
+	
+	
+
+}

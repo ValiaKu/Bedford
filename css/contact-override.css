@@ -1,0 +1,239 @@
+body {
+    background-color: #e9e5e1;
+}
+
+.top {
+    background-position: center 80%;
+    background-attachment: initial !important;
+}
+
+.top:before {
+    background: rgba(0, 0, 0, 0) url("../images/down_arrow_new.svg") no-repeat scroll center top;
+}
+
+.col-container {
+	max-width: 1166px;
+	margin: 0 auto;
+	min-height: 780px;
+}
+
+.content.contact h2 {
+    font-family: "bureaueaglebookregular";
+    font-size: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 550px;
+    margin: 0 !important;
+    padding: 70px 0px 40px !important;
+    color: #3c3c3b;
+    text-align: left;
+}
+
+.content.contact .col.cbre p.nashbond {
+    background:url(../images/contact/nashbond.svg) no-repeat top left;
+    background-size: 117px 32px;
+    margin-top: 150px;
+}
+
+.content.contact .col.cbre p.savills {
+    background:url(../images/contact/savills.png) no-repeat top left;
+}
+
+.content.contact .col {
+    width: 100%;
+    margin: 0px;
+    vertical-align: top;
+    max-width: 100%;
+    color: #4d4d4d;
+}
+
+.content.contact .col.left {
+    border-right: 2px solid #c5c1be;
+}
+
+p.savills {
+    margin-top: 60px;
+}
+
+.content.contact a {
+	color: #4d4d4d;
+}
+
+.content.contact a:hover {
+    text-decoration: underline;
+}
+
+.content.contact .col p {
+    padding: 0px 0px 0px 235px;
+}
+
+.col.cbre, .col.savills {
+	min-height: 200px;
+}
+
+.name {
+    margin-top: 40px;
+}
+
+.col-left {
+	width: 50%;
+	float: left;
+}
+
+.content.contact h2 {
+    margin: 0;
+}
+
+.col-right {
+	width: 50%;
+	float: right;
+    padding-left: 122px;
+}
+
+.content.contact .downloads {
+    text-align: left;
+}
+
+.content.contact .downloads a  {
+    margin: 5px 6px 5px 0px;
+    text-transform: uppercase;
+    width: 222px;
+    color: #FFF;
+}
+
+.content.contact .downloads a:hover  {
+    color: #4d4d4d;
+}
+
+.content.contact .downloads-title  {
+    padding: 100px 0px 40px !important;
+}
+
+.small-only {
+    display: none;
+}
+
+.disclaimer {
+    max-width:850px;
+    margin: 140px auto 0px;
+    padding: 0px 20px 70px;
+}
+
+@media only screen and (max-width: 1220px) {
+
+    .message p {
+        font-size: 36px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #wrapper .message p._2 {
+        margin: -15px 0px 0px 0px;
+    }
+
+    .content.contact .col p {
+        padding: 0px 0px 0px 165px;
+    }
+
+    .col-left {
+        padding-left: 10%;
+    }
+
+    .col-right {
+        padding-left: 6%;
+    }
+    
+    .content.contact .downloads {
+        max-width: 500px;
+        margin:0px auto;
+    }
+
+    .disclaimer {
+        max-width:700px;
+        margin: 70px auto 0px;
+    }
+
+    .content.contact .downloads a {
+        width: 182px;
+    }
+}
+
+@media only screen and (max-width: 1024px)  {
+
+    .col-left {
+        width: 100%;
+        padding: 0 0 70px;
+    }
+
+    .col-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .col-left h2, .col-right h2 {
+        max-width: 100%;
+        text-align: center;
+        margin: 0 auto!important;
+    }
+
+    .content.contact .col {
+        max-width: 400px;
+    }
+
+    .content.contact .col.left {
+        border: none;
+    }
+
+    .col.cbre, .col.savills {
+        margin-bottom: 30px;
+    }
+
+    .content.contact .col.cbre p.nashbond {
+        margin-top: 50px;
+    }
+
+    .col-container {
+        overflow: hidden;
+    }
+
+    .small-only {
+        display: block;
+    }
+    
+    .content.contact .downloads {
+        max-width: 380px;
+        margin:0px auto;
+    }
+
+    .content.contact .col p {
+        padding: 0px 0px 0px 180px;
+    }
+
+    .content.contact h2 {
+        margin: 0 auto !important;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width: 550px)  {
+    
+    .content.contact .downloads a {
+        width: 90%;
+        margin: 0 0 10px 5%;
+    }
+
+    .content.contact .downloads-title {
+        padding: 70px 0px 40px !important;
+    }
+
+    .col-right h2:first-child {
+            padding: 0px 0px 40px !important;
+    }
+
+    .content.contact .col {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+}

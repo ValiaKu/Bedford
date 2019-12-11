@@ -1,0 +1,31 @@
+/* map styles */
+
+@font-face{
+font-family:"Avenir Next Cyr W00 Regular";
+src:url("../assets/fonts/069faa0e-9913-48c4-9ef7-89a4bc080b65.eot?#iefix");
+src:url("../assets/fonts/069faa0e-9913-48c4-9ef7-89a4bc080b65.eot?#iefix") format("eot"),url("../assets/fonts/7db1f672-3a8f-4d19-9c49-7f61aed450b5.woff2") format("woff2"),url("../assets/fonts/4ab86b35-c0c2-42b5-98ad-4b6eba66b197.woff") format("woff"),url("../assets/fonts/276b3566-1c3b-4bc1-8915-15314f091f29.ttf") format("truetype"),url("../assets/fonts/5d02f5f4-46e7-453a-aef9-3e7106d7bb68.svg#5d02f5f4-46e7-453a-aef9-3e7106d7bb68") format("svg");
+}
+
+@font-face{
+font-family:"Avenir Next Cyr W00 Demi";
+src:url("../assets/fonts/fbf4298d-ef75-419c-b615-47f209a48ed2.eot?#iefix");
+src:url("../assets/fonts/fbf4298d-ef75-419c-b615-47f209a48ed2.eot?#iefix") format("eot"),url("../assets/fonts/40d36b4a-60c6-460a-bf43-4c948c23563e.woff2") format("woff2"),url("../assets/fonts/45b78f45-e639-4836-8612-e0892e120f14.woff") format("woff"),url("../assets/fonts/cbc021cc-b96f-4c82-ba0d-59cb0b7449c0.ttf") format("truetype"),url("../assets/fonts/c6778bcf-ca82-4a86-8a5f-08b70c9a71fd.svg#c6778bcf-ca82-4a86-8a5f-08b70c9a71fd") format("svg");
+}
+@font-face{
+font-family:"Avenir Next Cyr W00 Bold";
+src:url("../assets/fonts/fb4117a5-14ee-4035-8692-935bfff7fc2e.eot?#iefix");
+src:url("../assets/fonts/fb4117a5-14ee-4035-8692-935bfff7fc2e.eot?#iefix") format("eot"),url("../assets/fonts/4c04fb14-abdb-4f93-82bb-734d1b84307b.woff2") format("woff2"),url("../assets/fonts/04d2f223-2786-40c9-8481-be9dd47d8e7f.woff") format("woff"),url("../assets/fonts/bce3274e-f498-48ae-b269-a6930df496e7.ttf") format("truetype"),url("../assets/fonts/68f0375d-f66f-4f88-822a-5a0b61d2efc0.svg#68f0375d-f66f-4f88-822a-5a0b61d2efc0") format("svg");
+}
+
+.mapplic-container { background-color: #e3deda; }
+.mapplic-tooltip { background: #8ca2bf; }
+.mapplic-tooltip-close, .mapplic-clear-button { display: none; }
+.mapplic-tooltip-triangle { border-color: #8ca2bf transparent transparent transparent; margin-bottom: -7px; }
+.mapplic-tooltip-title { -moz-osx-font-smoothing: grayscale; color: #FFF; font-size: 12px !important; text-align: center; padding: 0 !important; margin: 0; font-family: "Avenir Next Cyr W00 Bold"; }
+.mapplic-tooltip-description p { -moz-osx-font-smoothing: grayscale; color: #FFF; text-align: center; letter-spacing: 0; font-size: 12px !important; font-family: "Avenir Next Cyr W00 Regular", Arial, Helvetica, sans-serif; }
+.mapplic-tooltip-description p span { text-decoration: underline; }
+.mapplic-clickable:not(g), g.mapplic-clickable > * { opacity: 1; }
+.mapplic-clickable:not(g):hover, g.mapplic-clickable:hover > * { opacity: 0.6; }
+
+
+.map-container { max-width: 1600px; margin: 0 auto; }

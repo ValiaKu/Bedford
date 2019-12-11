@@ -1,0 +1,128 @@
+
+.home .message p._1 {
+	margin:-65px 0px 0px 0px;
+}
+
+.home .content.home {
+	/*background:#e4deda url(../images/home-tpl.jpg) no-repeat top;*/
+	text-align:center;
+	position: relative;
+	min-height:500px;
+	line-height:1px;
+	font-size:1px;
+	/*display:none;*/
+}
+
+.home .content.home .column {
+	display:inline-block;
+	position: relative;
+	width:700px;
+	min-height:500px;
+	vertical-align:top;
+}
+
+.home .content.home .column.left {
+	padding:115px 0px;
+}
+
+.home .content.home .column.right {
+	padding:245px 0px 190px;
+}
+
+.home .content.home div article {
+	background:#6d8cb2;
+	
+	text-align:center;
+	min-height:400px;
+	display:table;
+}
+
+.home .content.home div article .inner {
+	display:table-cell;
+	padding:0px 22%;
+	*padding:15% 22%;
+	vertical-align:middle;
+}
+
+.home .content.home div article h3 {
+	font-size:18px;
+	padding:13px 0px 15px;
+	line-height:22px;
+	text-transform:uppercase;
+}
+
+.home .content.home div article p {
+	font-size:15px;
+	line-height:20px;
+}
+
+
+.home h3 {
+	font-family: 'bureaueaglebookregular', Arial, Helvetica, sans-serif;
+}
+.home .content.home div .img {
+}
+
+/*************LEFT COLUMN************/
+
+.home .content.home div.left .img._2 {
+	width:50%; 
+	height:50%; 
+	float:right;
+}
+
+.home .content.home div.left .img._3 {
+	width:270px; 
+	height:270px;
+	position:relative;
+	left:50%;
+	margin:230px 0px -60px -135px;
+	background:url(../images/home/cutlery.gif);
+}
+
+.home .content.home div.left .img._4 {
+	/*height:500px;*/
+}
+
+.home .content.home div.left ._5 {
+	margin:75px 0px 0px;
+	height:400px;
+}
+
+
+/************RIGHT COLUMN************/
+
+.home .content.home div.right {
+	margin-left:-1px;
+	text-align:left;
+}
+
+.home .content.home div.right .img._1 {
+	/*height:500px;*/
+	margin:0px 0px 40px;
+}
+
+.home .content.home div.right .img._3 {
+	width:270px; 
+	height:270px;
+	position:absolute;
+	z-index:10;
+	right:0px;
+	background:url(../images/home/cog.gif);
+	top:100px;
+}
+
+.home .content.home div.right .img._4 {
+	/*width:540px;
+	height:740px;*/
+	float:left;
+	margin:110px 0px 0px;
+	position:relative;
+	width:100%;
+
+}
+
+/*.home .content.home div.right .img._4  img {
+	position:absolute;
+	top:0px; left:0px;
+}*/

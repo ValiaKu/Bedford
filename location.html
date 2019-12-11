@@ -1,0 +1,885 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Avenue - Location</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/styles.css" type="text/css">
+  <link rel="stylesheet" href="css/location.css" type="text/css">
+  <link rel="stylesheet" href="css/mobile.css" type="text/css">
+
+  <!-- mapplic css -->
+  <link rel="stylesheet" type="text/css" href="assets/mapplic/css/mapplic.css">
+  <link rel="stylesheet" type="text/css" href="css/map-styles.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--[if lte IE 8]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+<script src="js/jquery.carouFredSel-6.0.4-packed.js" type="text/javascript"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/jquery.onscreen.js"></script>
+
+<script src="js/scripts.js"></script>
+<script src="js/jquery.bpopup.min.js"></script>
+<script type="text/javascript" src="js/jquery.sticky.js"></script>
+<!-- <script type="text/javascript" src="js/location.js"></script> -->
+
+<style>#popupForm { display:none; } #popupForm2 { display:none; }</style>
+<script type="text/javascript">
+        ;(function($) {
+             $(function() {
+                $('#my-button').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#popupForm').bPopup();
+                });
+
+                $('.form-button-1').bind('click', function(e) {
+                    e.preventDefault();
+                    $('#popupForm2').bPopup();
+                });         
+            });
+         })(jQuery);
+</script>
+<script>
+  $(window).load(function(){
+
+    $("#submenu").sticky({ topSpacing: 50 });
+
+    /*previous map functionality
+
+    $(".map-regeneration .development div").on('click', function(e) {
+      e.preventDefault();
+      $(".map-regeneration .development div").removeClass("popupMapItemVisible");
+      $(this).addClass('popupMapItemVisible');
+    });*/
+    goToSubsection(window.location.href);
+  });
+</script>
+<link rel="stylesheet" href="css/nav.css" type="text/css" />
+<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body class="location">
+
+  <div class="header-wrapper">
+      <header class="header location animated">
+         <div class="nav-wrapper">
+            <figure class="header-image"></figure>
+            <nav class="nav" role="navigation">
+                <h2 class="nav-logo"><a href="/">The Avenue</a></h2>
+                <div class="nav-trigger" role="button"><span></span></div>
+    
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="current">
+                        <a href="location.html">Location</a>
+                        <ul class="subnav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#area">Area</a></li>
+                            <li><a href="#regeneration">Regeneration</a></li>
+                            <li><a href="#transport">Transport</a></li>
+                            <li><a href="#occupiers">Local Occupiers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="lifestyle.html">Lifestyle</a>
+                        <ul class="subnav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#amenities">Local Amenities</a></li>
+                            <li><a href="#leisure">Leisure</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="building.html">The Building</a>
+                        <ul class="subnav">
+                            <li><a href="#overview">Building Overview</a></li>
+                            <li><a href="#specification">Summary Specification</a></li>
+                            <li><a href="#accommodation">Accommodation</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="retail.html">Retail</a>
+                        <ul class="subnav">
+                            <li><a href="#overview">Overview</a></li>
+                            <li><a href="#developments">Local Developments</a></li>
+                            <li><a href="#retailers">Local Retailers</a></li>
+                            <li><a href="#accommodation">Accommodation</a></li>
+                            <li><a href="#specification">Specification</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="developer.html">Developer</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact &amp; Downloads</a>
+                    </li>
+                </ul>
+            </nav>
+            <span class="cta shareButton" role="button" id="my-button">+ SHARE</span>
+        </div>
+
+        <figure class="headline-icon"></figure>
+        <h1>A New View</h1>
+    
+        <span class="scroll-down-arrow" role="button"></span>
+      
+      </header>
+    </div>
+
+    <div class="header-placeholder"></div>
+ 
+    <div id="wrapper"> 
+        <main>
+
+             <section class="content">
+                    
+                      <nav class="submenu" id="submenu">
+                        <a href="#overview" class="active">Overview</a>
+                        <a href="#regeneration">Area Transformation</a>
+                        <a href="#transport">Transport</a>
+                        <a href="#occupiers">Local Occupiers</a>
+                      </nav>
+
+                      
+                      <div class="subsection" id="occupiers">
+                        
+                        <article class="desc _1">
+                          
+                          <h4>Local Occupiers</h4>
+                          
+                          <p>
+                            Neighbouring businesses are as diverse as the location itself, with some of the world’s best calling this unique area of London home.
+                          </p>
+                          
+                        </article>
+                        
+                        <div class="occupiers">
+                          
+                          <div class="inner">
+                            
+                            <div class="occupier col fadeIn linkedin-bucket" data-delay="0.1">
+                             <img src="images/location/occupier1.svg">
+                             <h3 class="occupiercopy">LinkedIn Corporation</h3>
+                             <p>Castlewood House,<br>77-91 New Oxford Street</p>
+                           </div>
+
+                           <div class="occupier col fadeIn mindshare-bucket" data-delay="0.2">
+                            <img src="images/location/occupier2.svg">
+                            <h3>Mindshare</h3>
+                            <p>Central Saint Giles,<br>1 St Giles High Street</p>
+                          </div>
+                          
+                          <div class="occupier col fadeIn facebook-bucket" data-delay="0.3">
+                            <img src="images/location/occupier3.svg">
+                            <h3>Facebook</h3>
+                            <p>One Rathbone Square</p>
+                          </div>
+                          
+                          <div class="occupier col fadeIn lionsgate-bucket" data-delay="0.4">
+                           <img src="images/location/occupier4.svg">
+                           <h3>Lionsgate</h3>
+                           <p>Wells&More,<br>45 Mortimer Street</p>
+                         </div>
+                         
+                         <div class="occupier col fadeIn nbc-universal-bucket" data-delay="0.6">
+                           <img src="images/location/occupier5.svg">
+                           <h3>NBC Universal</h3>
+                           <p>Central Saint Giles,<br>1 St Giles High Street</p>
+                         </div>
+                         
+                         <div class="occupier col fadeIn google-bucket" data-delay="0.7">
+                          <img src="images/location/occupier6.svg">
+                          <h3>Google</h3>
+                          <p>Central Saint Giles,<br>1 St Giles High Street</p>
+                        </div>
+                        
+                        <div class="occupier col fadeIn allfunds-bank-bucket" data-delay="0.8">
+                          <img src="images/location/occupier7.svg">
+                          <h3>Allfunds Bank</h3>
+                          <p>Fitzroy Place,</br>Mortimer Street</p>
+                        </div>
+                        
+                        <div class="occupier col fadeIn estee-lauder-bucket" data-delay="0.9">
+                         <img src="images/location/occupier8.svg">
+                         <h3>Estee Lauder</h3>
+                         <p>Fitzroy Place,</br>Mortimer Street</p>
+                       </div>
+                       
+                     </div>
+                     
+                     <div class="occupierbtm col _1 fadeIn" data-delay="1.0"></div>
+                     <div class="occupierbtm col _2 fadeIn" data-delay="1.2"></div>
+                     <div class="occupierbtm col _3 fadeIn" data-delay="1.4"></div>
+                     <div class="occupierbtm col _4 fadeIn" data-delay="1.6"></div>
+                     
+                     <a class="prev mobile" href="#"></a>
+                     <a class="next mobile" href="#"></a>
+                     
+                   </div>
+                   
+                 </div>
+                 
+
+                 
+                 <div class="subsection" id="transport">
+
+                   
+                  <article class="desc _1">
+                    
+                    <h3>The area around Bedford Avenue is one of the best connected in the capital, with the arrival of the Elizabeth line set to revolutionise connectivity. 
+                    </h3>
+                    
+                    <p>With nearby tube stations including
+                      Tottenham Court Road and Goodge
+                      Street and a plethora of bus routes
+                      already bringing millions to the area
+                      each week, the Elizabeth line is set
+                      to enhance its appeal substantially,
+                      opening up the location to thousands
+                      of potential employees whose daily
+                      commute will be significantly improved. 
+                    </p>
+                    
+                  </article>
+                  
+                  <img src="images/location/transport.jpg">
+                  
+                  
+                  <article class="desc _1">
+                    
+                    <h4>Making new Connections</h4>
+                    
+                    <p>Following its launch in 2018, a trip on the
+                      Elizabeth line to Canary Wharf will take
+                      just 12 minutes, while London Heathrow
+                      is less than half an hour away, cutting the
+                      previous journey time in half.
+
+                      <br><br>
+                      Tottenham Court Road is also the only
+                      Central London station for the proposed
+                      Crossrail 2 line which will provide a new
+                      north-south link to the capital.
+
+
+                    </p>
+                    
+                  </article>
+                  
+                  
+                  
+                  <div class="routes">
+                    <img class="_mobile lazy fadeIn" data-src="images/location/transport-routes.svg">
+                    
+                    
+                    <div class="mobile routelist">
+                      <h3>Elizabeth line travel times<br>from Tottenham Court Road</h3>
+                      <p class="fadeIn" data-delay=".1">
+                        <span class="station">BOND ST</span>
+                        <img src="images/location/underground-icon.png">
+                        <span class="time">5 mins</span>
+                      </p>
+                      <p class="fadeIn" data-delay=".2">
+                        <span class="station">PADDINGTON</span>
+                        <img src="images/location/underground-icon.png">
+                        <span class="time">5 mins</span>
+                      </p>
+                      <p class="fadeIn" data-delay=".3">
+                        <span class="station">LIVERPOOL ST</span>
+                        <img src="images/location/underground-icon.png">
+                        <span class="time">5 mins</span>
+                      </p>
+                      <p class="fadeIn" data-delay=".4">
+                        <span class="station">PADDINGTON</span>
+                        <img src="images/location/underground-icon.png">
+                        <span class="time">5 mins</span>
+                      </p>
+                      <p class="fadeIn" data-delay=".5">
+                        <span class="station">CANARY WHARF</span>
+                        <img src="images/location/underground-icon.png">
+                        <img src="images/location/dlr-icon.png">
+                        <span class="time">20 mins</span>
+                      </p>
+                      <p class="fadeIn" data-delay=".6">
+                        <span class="station">HEATHROW AIRPORT</span>
+                        <img src="images/location/plane-icon.png">
+                        <span class="time">35 mins</span>
+                      </p>
+                    </div>
+                    
+                    
+                    <div class="legend">
+                      <span class="_1 fadeIn" data-delay="1.25">Underground</span>
+                      <span class="_2 fadeIn" data-delay="1.45">DLR</span>
+                      <span class="_3 fadeIn" data-delay="1.65">Overground</span>
+                      <span class="_4 fadeIn" data-delay="1.85">National Rail</span>
+                    </div>
+                  </div>
+                  
+                  
+                  
+                  <div class="transportmap">
+                   
+                   <div class="desc" data-delay=".3">
+                     <article>
+                      <h2>The Avenue is positioned at the forefront of a new era of transport in Central London.
+                      </h2>
+                      <p>Planned improvements to the main thoroughfare of Tottenham Court Road will see wider, tree-lined pavements, increased public space and pocket parks, creating a relaxing and safe ambience in which to enjoy the diverse varierty of new leisure amenities in the area.</p>
+                    </article>
+                  </div>
+                  <div class="map"  data-delay=".5"><img src="images/location/map_transport.jpg" class="block"></div>
+                  
+                </div>   
+
+                
+                <article class="desc _1">
+                  
+                  <h4>Travel Transformed</h4>
+                  
+                  <p>The Avenue is an attractive option for commuters, clients
+                    and visitors from far afield, with efficient and numerous
+                    forms of travel on its doorstep.
+                  </p>
+                  
+                </article>
+                
+                <div class="transportations">
+                  <div class="inner">
+                    <div class="transportation col" data-delay="0.2">
+                      <img src="images/location/transport_icons/underground.svg">
+                      <h3>Underground connections</h3>
+                      <p>Access to a host of underground lines: Tottenham Court Road (Elizabeth, Central, Northern), Oxford Circus (Victoria, Central, Bakerloo), Holborn (Central, Piccadilly), Piccadilly (Piccadilly, Bakerloo), Leicester Square (Northern, Piccadilly).
+                      </p>
+                    </div>
+                    
+                    <div class="transportation col" data-delay="0.3">
+                      <img src="images/location/transport_icons/hub.svg">
+                      <h3>A new transport hub</h3>
+                      <p>On the doorstep of the new Tottenham Court Road station, currently undergoing a £1bn transformation.
+                      </p>
+                    </div>
+                    
+                    <div class="transportation col" data-delay="0.4">
+                      <img src="images/location/transport_icons/crossrail.svg">
+                      <h3>Elizabeth Line</h3>
+                      <p>Direct access to the Elizabeth line network, with 24 trains per hour during peak times, transporting an estimated 102,000 passengers to and from Tottenham Court Road station daily.
+                      </p>
+                    </div>
+
+                    <div class="transportation col" data-delay=".5">
+                      <img src="images/location/transport_icons/bus.svg">
+                      <h3>Bus connections</h3>
+                      <p>An abundance of bus connections to all corners of London within a five minute walk. For example:</br>Eight bus routes heading north</br>Six bus routes heading east</br>Six bus routes heading south</br>Seven bus routes heading west
+                      </p>
+                    </div>
+
+                    <div class="transportation col btm" data-delay=".6">
+                      <img src="images/location/transport_icons/bicycle.svg">
+                      <h3>Santander Cycles</h3>
+                      <p>Numerous Santander Cycle docking stations are conveniently located in the surrounding area, five within a five minute walk.
+                      </p>
+                    </div>
+
+                    <div class="transportation col btm" data-delay=".7">
+                      <img src="images/location/transport_icons/plane.svg">
+                      <h3>Streamlined access</h3>
+                      <p>Access to the four major London airports, including less than half an hour to London Heathrow via the Elizabeth line.
+                      </p>
+                    </div>
+
+                    <div class="transportation col btm" data-delay=".9">
+                      <img src="images/location/transport_icons/rail.svg">
+                      <h3>London and Beyond</h3>
+                      <p>Travel times to mainline rail services via Tottenham Court Road:</br>Charing Cross — 4 mins</br>
+                      Liverpool Street — 8 mins</br>
+                      Euston — 4 mins</br>
+                      Kings Cross St Pancras — 11 mins</br>
+                      Victoria — 11 mins</br>
+                      Paddington — 13 mins</p>
+                    </div>
+
+                    <div class="transportation col btm" data-delay=".8">
+                      <img src="images/location/transport_icons/accessibility.svg">
+                      <h3>Improved Accessibility</h3>
+                      <p>Plans for the new Tottenham Court Road include increased pedestrianised areas and wider, tree-lined footpaths for better access to the improved underground and Elizabeth line stations.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="transportationbtm col _1" data-delay="1.4"></div>
+                  <div class="transportationbtm col _2" data-delay="1.6"></div>
+                  <div class="transportationbtm col _3" data-delay="1.8"></div>
+                  <div class="transportationbtm col _4" data-delay="2"></div>
+
+                  <a class="prev mobile" href="#"></a>
+                  <a class="next mobile" href="#"></a>
+
+
+                  <div class="clr"></div>
+
+                </div>
+                
+              </div>
+              
+              
+
+              <div class="subsection" id="regeneration">
+
+
+                <article class="desc _1">
+                  <h3>The Avenue sits at the forefront of the West End’s stunning transformation.</h3>
+                  <p class="text1">The regeneration of this part of
+                    the West End has been phenomenal.
+                    While the area north of Oxford Street
+                    has positioned itself as a hub for creative
+                    businesses, restaurants and retailers,
+                    this influence is spreading east beyond
+                    Tottenham Court Road as investment
+                    flows in.
+                    <br><br>Forward-thinking retailers and businesses
+                    are moving into the area, capitalising
+                    on the impact that the Elizabeth line
+                    will deliver. The buzz around the
+                    regeneration is growing, and the area
+                    where Bloomsbury, Fitzrovia and Soho
+                    meets is becoming a destination in itself;
+                    the only way is up.
+                  </p>
+                </article>
+
+          <img src="images/location/regeneration.jpg" alt="Regeneration">
+
+                <article class="desc _2">
+                  <h3>You’re in good company at The Avenue with a rapidly developing local area and exciting new local occupiers.</h3>
+                  <p class="text1">Global media enterprises and corporate giants are finding a new home in the West End, attracted by the exceptional transport and amenities it offers.
+                  </p>
+                  
+                  <p class="tooltip desktop">
+                    Click buildings below to explore local developments
+                  </p>
+
+                <!-- Map -->
+                <div class="map-container">
+                  <div id="mapplic"></div>
+                </div>
+
+         
+
+
+
+                  <p class="tooltip tablet">
+                    Use filters below to explorE<br>local developments
+                  </p>
+                </article>
+                
+                <div class="map-regeneration tablet">
+                 <div class="inner">
+
+                  <div class="mapmenu">
+
+                    <div class="category commercial">
+                      <a href="#commercial" class="active">Commercial offices<span class="color"></span></a>
+                    </div>
+                    <div class="category mixed">
+                      <a href="#mixed">Mixed use<span class="color"></span></a>
+                    </div>
+                    <div class="category retail">
+                      <a href="#retail">Leisure / Retail<span class="color"></span></a>
+                    </div>
+
+                  </div>
+
+                  <div class="developments commercial active" id="commercial">
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 25%; top: 72%;">
+                      <div><p>
+                        <span>1 Dean Street, W1</span>
+                        <span>Size:</span> 88,100 sq ft<br>
+                        <span>Status:</span> Completion 2017
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 35%; top: 65%;">
+                      <div><p>
+                        <span>11 Soho Street, W1</span>
+                        <span>Size:</span> 48,500 sq ft<br>
+                        <span>Status:</span> Completion 2015<br>
+                        <span>Occupier:</span> St. Ives Group
+                      </p></div>
+                    </div>
+
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 14%; top: 68%;">
+                      <div><p>
+                        <span>Ampersand Building, W1 </span>
+                        <span>Size:</span> 88,373 sq ft<br>
+                        <span>Status:</span> Completion 2015<br>
+                        <span>Occupier:</span> King.com
+                      </p></div>
+                    </div>
+
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 57%; top: 73%;">
+                      <div><p>
+                        <span>Nimax, W1</span>
+                        <span>Size:</span> 86,000 sq ft<br>
+                        <span>Status:</span> Completion 2019
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 17%; top: 45%;">
+                      <div><p>
+                        <span>One Rathbone Square, W1 </span>
+                        <span>Size:</span> 292,000 sq ft<br>
+                        <span>Status:</span> Completion 2017<br>
+                        <span>Occupier:</span> Facebook
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 79%; top: 56%       ;">
+                      <div><p>
+                        <span>79-93 New Oxford St, W1 </span>
+                        <span>Size:</span> 88,100 sq ft<br>
+                        <span>Status:</span> Completion 2017
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 79%; top: 72%;">
+                      <div><p>
+                        <span>Tin Pan Alley, W1 </span>
+                        <span>Size:</span> 103,500 sq ft<br>
+                        <span>Status:</span> Completion 2020
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 77%; top: 48%;">
+                      <div><p>
+                        <span>100 New Oxford Street, W1 </span>
+                        <span>Size:</span> 85,000 sq ft<br>
+                        <span>Status:</span> Completion 2015<br>
+                        <span>Occupiers:</span> William Morris,<br>Endeavor, Space Ape Games,<br>Stanhope Plc, Weve
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 33%; top: 57%;">
+                      <div>
+                       <p>
+                        <span>Holden House, W1 </span>
+                        <span>Use:</span> Mixed use<br>
+                        <span>Size:</span> 126,000 sq ft<br>
+                        <span>Status:</span> Completion 2020
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 29%; top: 47%;">
+                      <div><p>
+                        <span>15/18 Rathbone Place, W1</span>
+                        <span>Size:</span> 14,876 sq ft<br>
+                        <span>Status:</span> Completion 2018<br>
+                        <span>Occupier:</span> Nickelodeon
+                      </p></div>
+                    </div>
+
+                    <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 42%; top: 39%;">
+                      <div><p>
+                        <span>2 Stephen Street, W1</span>
+                        <span>Size:</span> 88,989 sq ft<br>
+                        <span>Status:</span> Complete<br>
+                        <span>Occupiers:</span>Fremantle Media, The Office Group, Freud Communications
+                      </p></div>
+                    </div>
+
+
+                  </div>
+
+
+                  <div class="developments mixed" id="mixed">
+
+                   <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 54%; top: 62%;">
+                     <div><p>
+                      <span>1 Oxford Street, W1</span>
+                      <span>Size:</span> 57,400 sq ft<br>
+                      <span>Status:</span> Completion 2020
+                    </p></div>
+                  </div>
+
+                  <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 42%; top: 19%;">
+                   <div><p>
+                    <span>1 Stephen Street, W1</span>
+                    <span>Size:</span> 44,200 sq ft<br>
+                    <span>Status:</span> Complete<br>
+                    <span>Occupiers:</span>  Anacap, Fremantle <br>Media, Encompass Digital,<br>Media, Freud Communications,<br>BrandOpus
+                  </p></div>
+                </div>
+
+                <div class="development fadeInTolerant popupMapItemVisible" data-duration=".35" data-delay=".25"  style="left: 46%; top: 68%;">
+                 <div><p>
+                  <span>20 Soho Square, W1</span>
+                  <span>Size:</span> 60,000 sq ft<br>
+                  <span>Status:</span> Completion 2016
+                </p></div>
+              </div>
+
+              <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 55%; top: 89%;">
+               <div>
+                 <p>
+                  <span>Foyles, W1</span>
+                  <span>Size:</span> 225,000 sq ft<br>
+                  <span>Status:</span> Completion 2019
+                </p></div>
+              </div>
+
+              <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 21%; top: 59%;">
+               <div>
+                 <p>
+                  <span>Oxford House, W1</span>
+                  <span>Size:</span> 90,000 sq ft<br>
+                  <span>Status:</span> Completion 2019
+                </p></div>
+              </div>
+
+              <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 62%; top: 47%;">
+               <div>
+                 <p>
+                   <span>Corinthian House, W1</span>
+                   <span>Size:</span> 22,000 sq ft<br>
+                   <span>Status:</span> Completion 2020
+                 </p></div>
+               </div>
+
+               <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 87%; top: 39%;">
+                 <div>
+                   <p>
+                     <span>22 Bloomsbury Street, W1 </span>
+                     <span>Size:</span> 34,200 sq ft<br>
+                     <span>Status:</span> Completion 2017
+                   </p></div>
+                 </div>
+               </div>
+
+
+               <div class="developments retail" id="retail">
+
+                 <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 66%; top: 64%;">
+                   <div>
+                     <p>
+                      <span>Centre Point, W1</span>
+                      <span>Size:</span> 41,780 sq ft<br>
+                      <span>Status:</span> Completion 2018
+                    </p></div>
+                  </div>
+
+                  <div class="development fadeInTolerant" data-duration=".35" data-delay=".25"  style="left: 45%; top: 52%;">
+                   <div>
+                     <p>
+                      <span>4/48 Oxford Street, W1</span>
+                      <span>Size:</span> 76,500 sq ft<br>
+                      <span>Status:</span> Completion 2020
+                    </p></div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+
+            <div class="legend">
+              <div>
+                <h3>KEY</h3>
+                <div class="category commercial">
+                  <p class="color"></p><span>Commercial offices</span>
+                </div>
+                <div class="category mixed">
+                  <p class="color"></p><span>Mixed use</span>
+                </div>
+  <!--                   <div class="category retail">
+                      <p class="color"></p><span>Leisure/Retail</span></div>
+   -->            
+              </div>
+              <div class="lines">
+                <div class="category central">
+                  <p class="color"></p><span>Central line</span>
+                </div>
+                <div class="category northern">
+                  <p class="color"></p><span>Northern line</span>
+                </div>
+                <div class="category elizabeth">
+                  <p class="color"></p><span>Elizabeth line</span>
+                </div>
+
+                
+              </div>
+              <div class="legend_note">
+                <p>
+                  This map demonstrates a selection of the key developments in the local area.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+                <div class="subsection active" id="overview">
+
+                  <article class="desc _1 fadeIn" data-delay=".3">
+                    <h3>The Avenue brings the best of Fitzrovia, Soho, Covent Garden and Mayfair to your doorstep.</h3>
+                    <p>The capital’s exclusive and most vibrant districts are on your doorstep at The Avenue, offering all the amenities a discerning Londoner is looking for.<br><br>Dining, shopping and nightlife are a stroll away, whether the preference is for cutting edge West End theatre, Michelin-starred restaurants or global luxury fashion brands. World-renowned retailers and modern dining establishments juxtapose tranquil gardens and parks.</p>
+
+                 </article>
+
+
+                <img src="images/location/aerial_small.jpg" alt="" class="aerial-image" />
+
+
+                 <div class="map-overview hide-for-tablet" id="map-overview">
+                   <div class="inner">
+                    <img src="images/location/map-overview@2x.jpg" alt="MAP">
+                    <div class="labels" id="labels">
+
+                      <div class="label fadeIn"  data-delay=".1" style="left:33%;top:33%;"><div><p>ST JAMES'S</p></div></div>
+                      <div class="label fadeIn"  data-delay=".2" style="left:10.6%;top:52%;"><div><p>COVENT GARDEN</p></div></div>
+                      <div class="label fadeIn"  data-delay=".3" style="left:45%;top:50%;"><div><p>SOHO</p></div></div>
+                      <div class="label fadeIn"  data-delay=".4" style="left:74.8%;top:58.5%;"><div><p>FITZROVIA</p></div></div>
+                      <div class="label fadeIn"  data-delay=".5" style="left:60%;top:35%;"><div><p>MAYFAIR</p></div></div>
+                      <div class="label fadeIn"  data-delay=".6" style="left:50%;top:66%;">
+                        <div><p style="background:none;"><img src="images/avenue.png"></p></div>
+                      </div>
+                      <div class="label" style="left:34%;top:58%;">
+                        <div>
+                          <img src="images/location/traffic-icon.svg">
+                          <!-- <p style="background:none; position:absolute; width:100%; top:0px; left:0px; color:#fff; font-size:10px; padding:33px 0px 0px;">TOTTENHAM<br>COURT ROAD</p> -->
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div style="position:absolute; width:100%; height:100%;"></div>
+                  </div>
+                </div>
+              </div>
+
+            </section>
+            <section class="social">
+                <a class="twitter" href="#"></a>
+                <h4>The avenue on Twitter</h4>
+                <p>
+                    <strong>@theavenuelondon</strong><br><br>
+                    “Get a first look at the exciting new retailers set<br />
+                    to move to The Avenue. 
+                    <em><strong>#theavenuelondon #newlondonretail</strong></em>”
+                    <br /><br />
+                    <a class="cta" href="#">Follow</a>
+                </p>
+            </section>
+              
+            </main>
+
+            <footer class="menu">
+              <a class="logo" href="#"></a>
+              <strong>A development by Ashby Capital &amp; Exemplar</strong>
+              <nav>
+                  <a href="location.html" class="active">Location</a>
+                  <a href="lifestyle.html">Lifestyle</a>
+                  <a href="building.html">The Building</a>
+                  <a href="retail.html">Retail</a>
+                  <a href="developer.html">Developer</a>
+                  <a href="contact.html">Contact &amp; Downloads</a>
+              </nav>  
+              <p><a href="#">Privacy & Legal</a> | <a href="http://HolyGunz.com">Made by HolyGunz.com</a></p>
+          </footer>
+
+        </div>
+
+        <div id="popupForm" class="popup">
+        <a href="" class="cta b-close" id="my-button-close">x close</a>
+        
+        <div class="oneBoxToShare">
+            <h2>Email a brochure</h2>
+            <form>
+                <p>Email a copy of The Avenue London brochure below. Enter your email, and destination below.</p>
+                <input placeholder="Enter recipient email" type="text">
+                <input placeholder="Enter your email" type="text">
+                <a href="" class="cta form-button form-button-1"  id="my-button-open-confirmation">Send</a>
+            </form>
+        </div>
+
+        <div class="oneBoxToShare">
+            <h2>Share website link</h2>
+            <form>
+                <p>Share a link to The Avenue London brochure below. Enter your email, and destination below.</p>
+                <input placeholder="Enter recipient email" type="text">
+                <input placeholder="Enter your email" type="text">
+                <a href="" class="cta form-button form-button-1"  id="my-button-open-confirmation">Share</a>
+            </form>
+        </div>
+
+        <div class="oneBoxToShare">
+            <h2>Download</h2>
+            <form>
+                <p>Select items below to download pdfs.</p>
+
+                <div class="downloads">
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_brochure.pdf" class="cta">Brochure</a>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_specification.pdf" class="cta">Specification</a><br/>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_floor_plans.pdf" class="cta">Floor Plans</a>
+                    <a href="images/contact/downloads/1845_010_OneBedfordAvenue_Exemplar_Download_docs_space_plans.pdf" class="cta">Space Plans</a>
+                </div>
+                <a href="" class="cta form-button form-button-1" id="my-button-open-confirmation">Download</a>
+            </form>
+        </div>
+
+    </div>
+
+    <div id="popupForm2" class="popup">
+        <div class="popup-content">
+         <h2>Thank you! </h2>
+         <p>Thank you for your interest in The Avenue.<br/>
+           <a href="" class="cta b-close" id="my-button-close">x close</a>
+        </div>
+    </div>
+
+ <!-- mapplic --><!-- Scripts -->
+ <script type="text/javascript" src="assets/mapplic/js/hammer.min.js"></script>
+ <script type="text/javascript" src="assets/mapplic/js/jquery.easing.js"></script>
+ <script type="text/javascript" src="assets/mapplic/js/jquery.mousewheel.js"></script>
+ <script type="text/javascript" src="assets/mapplic/js/smoothscroll.js"></script>
+ <script type="text/javascript" src="assets/mapplic/js/mapplic.js"></script>
+ <script type="text/javascript">
+  $(document).ready(function() {
+    $('#mapplic').mapplic({
+      source: 'location_map.json',
+      height: 900,
+      animate: true,
+      mapfill: false,
+      sidebar: false,
+      minimap: false,
+      deeplinking: true,
+      fullscreen: false,
+      zoombuttons: false,
+      hovertip: false,
+      zoom: false,
+      developer: false,
+      maxscale: 1
+    });
+
+    $('.usage').click(function(e) {
+      e.preventDefault();
+      
+      $('.editor-window').slideToggle(200);
+    });
+
+    $('.editor-window .window-mockup').click(function() {
+      $('.editor-window').slideUp(200);
+    });
+  });
+</script>
+
+</body>
